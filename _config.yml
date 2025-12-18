@@ -1,0 +1,35 @@
+# Site settings
+title: PAWS UNITED
+description: A United Creator Collective — One Community. Many Voices.
+url: "https://pawsunited.info"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Theme settings (using no theme for custom design)
+plugins: []
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Social links
+discord_invite: "https://discord.gg/pawsunited"
+social:
+  twitter: ""
+  instagram: ""
+  tiktok: ""
