@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#0F2A24">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ '/pawsuintedsplashscreen.jpg' | absolute_url }}">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/pawsuintedsplashscreen.jpg' | absolute_url }}">
+  
+  <title>{{ page.title | default: site.title }}</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/pawsunitedlogo.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/pawsunitedlogo.png' | relative_url }}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  {% if page.extra_css %}
+  <style>{{ page.extra_css }}</style>
+  {% endif %}
+</head>
+<body>
+  <main>
+    {{ content }}
+  </main>
+  
+  {% if page.extra_js %}
+  <script>{{ page.extra_js }}</script>
+  {% endif %}
+</body>
+</html>

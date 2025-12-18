@@ -1,0 +1,46 @@
+# PAWS UNITED - Featured Creators
+# Schema:
+#   - name: Creator display name
+#   - primary_platform: Main streaming platform (twitch, youtube, tiktok, kick)
+#   - secondary_platforms: Array of additional platforms
+#   - tagline: Optional one-line description (max ~60 chars)
+#   - avatar: Optional custom avatar image path (defaults to initials)
+
+- name: "TailWagger"
+  primary_platform: "twitch"
+  secondary_platforms:
+    - "youtube"
+    - "tiktok"
+  tagline: "Variety streamer & community builder"
+
+- name: "PurrfectVibes"
+  primary_platform: "youtube"
+  secondary_platforms:
+    - "twitch"
+  tagline: "Music & creative content"
+
+- name: "HowlStream"
+  primary_platform: "kick"
+  secondary_platforms:
+    - "tiktok"
+    - "youtube"
+  tagline: "Gaming & entertainment"
+
+- name: "WhiskerWaves"
+  primary_platform: "tiktok"
+  secondary_platforms:
+    - "twitch"
+  tagline: "Clips & highlights"
+
+- name: "FurryFrequency"
+  primary_platform: "twitch"
+  secondary_platforms:
+    - "youtube"
+    - "kick"
+  tagline: "IRL & just chatting"
+
+- name: "PawPrint"
+  primary_platform: "youtube"
+  secondary_platforms:
+    - "tiktok"
+  tagline: "Gaming tutorials & guides"
