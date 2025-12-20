@@ -1,0 +1,17 @@
+# PAWS UNITED - Team Roles
+# Schema:
+#   - role: Role name
+#   - description: Role description
+#   - icon: Icon identifier for the role
+
+- role: "Moderatoren"
+  description: "Halte die Community freundlich und sicher"
+  icon: "shield"
+
+- role: "GameMaster"
+  description: "Betreue Spieler auf unseren Servern und organisiere Events"
+  icon: "gamepad"
+
+- role: "Admins"
+  description: "Technische Verwaltung und Projektleitung"
+  icon: "settings"

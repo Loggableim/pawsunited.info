@@ -1,46 +1,37 @@
 # PAWS UNITED - Featured Creators
 # Schema:
 #   - name: Creator display name
+#   - handle: Social media handle
 #   - primary_platform: Main streaming platform (twitch, youtube, tiktok, kick)
 #   - secondary_platforms: Array of additional platforms
 #   - tagline: Optional one-line description (max ~60 chars)
 #   - avatar: Optional custom avatar image path (defaults to initials)
 
-- name: "TailWagger"
-  primary_platform: "twitch"
-  secondary_platforms:
-    - "youtube"
-    - "tiktok"
-  tagline: "Variety streamer & community builder"
-
-- name: "PurrfectVibes"
-  primary_platform: "youtube"
-  secondary_platforms:
-    - "twitch"
-  tagline: "Music & creative content"
-
-- name: "HowlStream"
-  primary_platform: "kick"
-  secondary_platforms:
-    - "tiktok"
-    - "youtube"
-  tagline: "Gaming & entertainment"
-
-- name: "WhiskerWaves"
+- name: "Pyro Taidum"
+  handle: "@pyrotaidum"
   primary_platform: "tiktok"
   secondary_platforms:
     - "twitch"
-  tagline: "Clips & highlights"
+  tagline: "Gaming & Furry Content Creator"
 
-- name: "FurryFrequency"
-  primary_platform: "twitch"
+- name: "FeuerFuchs"
+  handle: "@derfeuerfuchs"
+  primary_platform: "tiktok"
   secondary_platforms:
     - "youtube"
-    - "kick"
-  tagline: "IRL & just chatting"
+  tagline: "Der feurige Fuchs der Community"
 
-- name: "PawPrint"
-  primary_platform: "youtube"
+- name: "Turbofleck"
+  handle: "@turbofleck"
+  primary_platform: "tiktok"
   secondary_platforms:
-    - "tiktok"
-  tagline: "Gaming tutorials & guides"
+    - "twitch"
+  tagline: "High-Energy Gaming & Entertainment"
+
+- name: "Bouizs Spiros"
+  handle: "@boz12427"
+  primary_platform: "tiktok"
+  secondary_platforms:
+    - "youtube"
+  tagline: "Variety Gaming & Creative Streams"
+
