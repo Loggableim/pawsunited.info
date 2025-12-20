@@ -1,43 +1,50 @@
 /* ==========================================================================
-   PAWS UNITED — Corporate Design System
+   PAWS UNITED — Brand & Design System
+   Furry-Friendly Gaming Community
    ========================================================================== */
 
 /* CSS Custom Properties (Design Tokens)
    ========================================================================== */
 :root {
-  /* Primary Colors (Brand Core) */
-  --color-midnight-green: #0F2A24;
-  --color-deep-navy: #0B1A2B;
-  --color-off-white: #F4F5F2;
-  --color-charcoal: #1C1F23;
+  /* Primary Colors (Rainbow Core from Logo) */
+  --color-paws-red: #E94B35;
+  --color-paws-orange: #F39C12;
+  --color-paws-yellow: #F1C40F;
+  --color-paws-green: #2ECC71;
+  --color-paws-blue: #3498DB;
+  --color-paws-purple: #9B59B6;
   
-  /* Accent Spectrum (from Logo) */
-  --color-pride-red: #E84B3C;
-  --color-gold-yellow: #F4B63E;
-  --color-emerald-green: #3FA46A;
-  --color-royal-blue: #3A6EDC;
-  --color-violet: #7B4DB5;
+  /* UI Base Colors (Dark Mode) */
+  --color-dark-base: #0E0F14;
+  --color-surface-dark: #161823;
+  --color-border: #262A3A;
+  --color-text-primary: #F4F4F6;
+  --color-text-secondary: #A1A6B3;
   
-  /* Functional Colors */
-  --color-background: var(--color-midnight-green);
-  --color-background-alt: var(--color-deep-navy);
-  --color-card-bg: #12181F;
-  --color-text-primary: var(--color-off-white);
-  --color-text-secondary: rgba(244, 245, 242, 0.7);
-  --color-text-muted: rgba(244, 245, 242, 0.5);
-  --color-border: rgba(255, 255, 255, 0.06);
-  --color-border-hover: rgba(255, 255, 255, 0.12);
+  /* Functional Colors (Legacy Support) */
+  --color-background: var(--color-dark-base);
+  --color-background-alt: var(--color-surface-dark);
+  --color-card-bg: var(--color-surface-dark);
+  --color-text-muted: rgba(161, 166, 179, 0.6);
+  --color-border-hover: rgba(155, 89, 182, 0.3);
   
   /* Gradients */
   --gradient-signature: linear-gradient(135deg,
-    #E84B3C 0%,
-    #F4B63E 25%,
-    #3FA46A 50%,
-    #3A6EDC 75%,
-    #7B4DB5 100%);
+    #E94B35 0%,
+    #F39C12 16.67%,
+    #F1C40F 33.33%,
+    #2ECC71 50%,
+    #3498DB 66.67%,
+    #9B59B6 100%);
+  
+  --gradient-glow: radial-gradient(circle at top,
+    #9B59B6,
+    transparent 70%);
   
   /* Typography */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-headline: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-primary: var(--font-body);
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -116,18 +123,19 @@ img {
 }
 
 a {
-  color: var(--color-royal-blue);
+  color: var(--color-paws-blue);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-gold-yellow);
+  color: var(--color-paws-purple);
 }
 
 /* Typography
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -220,28 +228,36 @@ p {
 }
 
 .btn--primary {
-  background: var(--color-pride-red);
-  color: var(--color-off-white);
+  background: var(--gradient-signature);
+  color: var(--color-text-primary);
   box-shadow: var(--shadow-md);
 }
 
 .btn--primary:hover {
-  background: #d43d2f;
-  color: var(--color-off-white);
-  transform: translateY(-2px);
+  background: var(--gradient-signature);
+  color: var(--color-text-primary);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-lift);
+  filter: brightness(1.1);
 }
 
 .btn--secondary {
   background: transparent;
   color: var(--color-text-primary);
-  border: 1px solid var(--color-border);
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(var(--color-surface-dark), var(--color-surface-dark)),
+    var(--gradient-signature);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .btn--secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+    var(--gradient-signature);
   color: var(--color-text-primary);
-  border-color: var(--color-border-hover);
+  transform: translateY(-2px);
 }
 
 .btn--large {
@@ -351,7 +367,7 @@ p {
   justify-content: center;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.05);
-  color: var(--color-gold-yellow);
+  color: var(--color-paws-yellow);
 }
 
 .feature-card__icon svg {
@@ -494,7 +510,7 @@ p {
 .cta-section {
   text-align: center;
   padding: var(--space-3xl) var(--container-padding);
-  background: var(--color-deep-navy);
+  background: var(--color-surface-dark);
   position: relative;
   overflow: hidden;
 }
@@ -525,7 +541,7 @@ p {
    ========================================================================== */
 .footer {
   padding: var(--space-xl) 0;
-  background: var(--color-charcoal);
+  background: var(--color-surface-dark);
   text-align: center;
 }
 
@@ -663,7 +679,7 @@ p {
    ========================================================================== */
 .btn:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--color-royal-blue);
+  outline: 2px solid var(--color-paws-blue);
   outline-offset: 2px;
 }
 
@@ -679,4 +695,204 @@ a:focus-visible {
   .footer__social {
     display: none;
   }
+}
+
+/* Server Cards
+   ========================================================================== */
+.server-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.server-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.server-card__title {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+}
+
+.server-card__status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.server-card__status--online {
+  background-color: rgba(46, 204, 113, 0.15);
+  color: var(--color-paws-green);
+}
+
+.server-card__status--offline {
+  background-color: rgba(233, 75, 53, 0.15);
+  color: var(--color-paws-red);
+}
+
+.server-card__status--maintenance {
+  background-color: rgba(241, 196, 15, 0.15);
+  color: var(--color-paws-yellow);
+}
+
+.server-card__description {
+  color: var(--color-text-secondary);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.server-card__vibe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.server-card__vibe svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-paws-purple);
+}
+
+.btn--full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Team Benefits
+   ========================================================================== */
+.team-benefits {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--color-dark-base);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.team-benefits__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.team-benefits__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md) var(--space-lg);
+  font-size: 1.125rem;
+}
+
+.team-benefits__list li {
+  color: var(--color-text-primary);
+}
+
+.section-cta {
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+/* Benefit Cards (Why Join section)
+   ========================================================================== */
+.section--gradient {
+  background: linear-gradient(180deg, 
+    var(--color-surface-dark) 0%, 
+    var(--color-dark-base) 100%);
+  position: relative;
+}
+
+.section--gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  background: var(--gradient-glow);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.benefit-card {
+  text-align: center;
+}
+
+.benefit-card__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-md);
+  padding: var(--space-md);
+  background: linear-gradient(135deg, 
+    rgba(155, 89, 182, 0.1), 
+    rgba(52, 152, 219, 0.1));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-card__icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-paws-purple);
+}
+
+.benefit-card__title {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-sm);
+}
+
+.benefit-card__text {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Creator Card Handle
+   ========================================================================== */
+.creator-card__handle {
+  font-size: 0.875rem;
+  color: var(--color-paws-blue);
+  margin: -0.25rem 0 0.5rem;
+  font-family: monospace;
+}
+
+/* Footer
+   ========================================================================== */
+.footer {
+  background-color: var(--color-dark-base);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer__content {
+  padding: var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.footer__text {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.footer__gradient-text {
+  background: var(--gradient-signature);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: var(--font-weight-bold);
 }

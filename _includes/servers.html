@@ -1,0 +1,15 @@
+<section id="servers" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header__title">🎮 Unsere Game Server</h2>
+      <p class="section-header__text">
+        Fünf verschiedene Gaming-Welten warten auf dich. Von Survival bis Strategie – für jeden ist etwas dabei.
+      </p>
+    </div>
+    <div class="grid grid--3">
+      {% for server in site.data.servers %}
+        {% include server-card.html server=server %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,81 +1,104 @@
 # PAWS UNITED
 
-A United Creator Collective — One Community. Many Voices.
+Ein Zuhause für Gamer, Furrys, Streamer & Creator — Furry-freundliche Gaming Community mit eigenen Servern.
 
 ![PAWS UNITED](pawsunitedlogo.png)
 
-## About
+## Über uns
 
-PAWS UNITED is a curated Discord community representing high-quality streamers across platforms including TikTok, Twitch, YouTube, and Kick. This repository contains the Jekyll-based landing page for [pawsunited.info](https://pawsunited.info).
+PAWS UNITED ist eine Gaming-Community mit Fokus auf Furry-Kultur, Creator-Unterstützung und gemeinsames Spielen. Wir betreiben eigene Game Server und bieten eine lebendige, offene Community auf Discord.
 
 ## Features
 
-- **Curated Membership** — Quality over quantity
-- **Cross-Platform** — Creators from Twitch, YouTube, TikTok, and Kick
-- **Creator Collaboration** — Find partners for streams, events, and content
-- **Moderated Discord** — A high-signal, spam-free environment
-- **Events & Collabs** — Regular community events and collaborative streams
+- **🎮 Game Server** — ARK, Minecraft (Bedrock & Java), C&C Red Alert, GTA V
+- **🎥 Creator Support** — Streamer & Content Creator aus verschiedenen Plattformen
+- **🛠️ Team gesucht** — Moderatoren, GameMaster und Admins
+- **🐾 Furry-freundlich** — Offene und inklusive Community
+- **🌈 Events & Collabs** — Regelmäßige Community-Events und Streams
 
-## Development
+## Entwicklung
 
-This site is built with [Jekyll](https://jekyllrb.com/) and is compatible with [GitHub Pages](https://pages.github.com/).
+Diese Seite ist mit [Jekyll](https://jekyllrb.com/) gebaut und kompatibel mit [GitHub Pages](https://pages.github.com/).
 
-### Local Development
+### Lokale Entwicklung
 
 ```bash
-# Install dependencies
+# Dependencies installieren
 gem install bundler jekyll
 
-# Run development server
+# Development Server starten
 jekyll serve
 ```
 
-Visit `http://localhost:4000` to view the site.
+Besuche `http://localhost:4000` um die Seite anzuzeigen.
 
-### File Structure
+### Dateistruktur
 
 ```
-├── _config.yml           # Jekyll configuration
+├── _config.yml           # Jekyll Konfiguration
 ├── _data/
-│   └── streamers.yml     # Creator data
-├── _includes/            # Reusable components
+│   ├── servers.yml       # Game Server Daten
+│   ├── streamers.yml     # Creator Daten
+│   └── team-roles.yml    # Team-Rollen
+├── _includes/            # Wiederverwendbare Komponenten
 │   ├── hero.html
-│   ├── about.html
+│   ├── servers.html
+│   ├── server-card.html
+│   ├── team.html
 │   ├── creators.html
 │   ├── creator-card.html
-│   ├── features.html
-│   ├── trust.html
+│   ├── why-join.html
 │   ├── cta.html
 │   └── footer.html
 ├── _layouts/
-│   └── default.html      # Main layout
+│   └── default.html      # Haupt-Layout
 ├── assets/
 │   └── css/
-│       └── main.css      # Corporate Design System
-└── index.html            # Landing page
+│       └── main.css      # Design System
+└── index.html            # Landing Page
 ```
 
-### Adding Creators
+### Creator hinzufügen
 
-Edit `_data/streamers.yml` to add or modify featured creators:
+Bearbeite `_data/streamers.yml` um Creator hinzuzufügen oder zu ändern:
 
 ```yaml
 - name: "CreatorName"
-  primary_platform: "twitch"  # twitch, youtube, tiktok, or kick
+  handle: "@socialhandle"
+  primary_platform: "tiktok"  # twitch, youtube, tiktok, oder kick
   secondary_platforms:
     - "youtube"
-    - "tiktok"
-  tagline: "Short description"
+    - "twitch"
+  tagline: "Kurze Beschreibung"
+```
+
+### Game Server hinzufügen
+
+Bearbeite `_data/servers.yml`:
+
+```yaml
+- name: "Server Name"
+  game: "Game Title"
+  panel_url: "https://panel.pawsunited.info/c/..."
+  description: "Server Beschreibung"
+  status: "online"  # online, offline, maintenance
+  vibe: "Community-Vibe"
 ```
 
 ## Design System
 
-The site follows the PAWS UNITED Corporate Design System:
+Die Seite folgt dem PAWS UNITED Brand & Design System:
 
-- **Primary Colors**: Midnight Green (#0F2A24), Deep Navy (#0B1A2B), Off White (#F4F5F2)
-- **Accent Colors**: Pride Red (#E84B3C), Gold Yellow (#F4B63E), Emerald Green (#3FA46A), Royal Blue (#3A6EDC), Violet (#7B4DB5)
-- **Typography**: Inter (Google Fonts)
+- **Primärfarben (Regenbogen)**: 
+  - Paws Red `#E94B35`
+  - Paws Orange `#F39C12`
+  - Paws Yellow `#F1C40F`
+  - Paws Green `#2ECC71`
+  - Paws Blue `#3498DB`
+  - Paws Purple `#9B59B6`
+- **UI-Farben**: Dark Base `#0E0F14`, Surface Dark `#161823`
+- **Typografie**: Poppins (Headlines), Inter (Body)
 
-## License
+## Lizenz
 
-See [LICENSE](LICENSE) for details.
+Siehe [LICENSE](LICENSE) für Details.
