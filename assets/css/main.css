@@ -123,13 +123,13 @@ img {
 }
 
 a {
-  color: var(--color-royal-blue);
+  color: var(--color-paws-blue);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-gold-yellow);
+  color: var(--color-paws-purple);
 }
 
 /* Typography
@@ -359,7 +359,7 @@ p {
   justify-content: center;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.05);
-  color: var(--color-gold-yellow);
+  color: var(--color-paws-yellow);
 }
 
 .feature-card__icon svg {
@@ -502,7 +502,7 @@ p {
 .cta-section {
   text-align: center;
   padding: var(--space-3xl) var(--container-padding);
-  background: var(--color-deep-navy);
+  background: var(--color-surface-dark);
   position: relative;
   overflow: hidden;
 }
@@ -533,7 +533,7 @@ p {
    ========================================================================== */
 .footer {
   padding: var(--space-xl) 0;
-  background: var(--color-charcoal);
+  background: var(--color-surface-dark);
   text-align: center;
 }
 
@@ -671,7 +671,7 @@ p {
    ========================================================================== */
 .btn:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--color-royal-blue);
+  outline: 2px solid var(--color-paws-blue);
   outline-offset: 2px;
 }
 
