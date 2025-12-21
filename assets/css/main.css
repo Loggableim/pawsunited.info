@@ -313,6 +313,18 @@ p {
   object-fit: cover;
 }
 
+.creator-card__avatar--icon {
+  background: linear-gradient(135deg, 
+    rgba(155, 89, 182, 0.15), 
+    rgba(52, 152, 219, 0.15));
+}
+
+.creator-card__avatar--icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-text-primary);
+}
+
 .creator-card__name {
   font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
