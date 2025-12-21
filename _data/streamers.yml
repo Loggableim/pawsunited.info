@@ -38,3 +38,10 @@
     - "youtube"
   tagline: "Variety Gaming & Creative Streams"
   avatar: "assets/images/avatars/boz12427.jpeg"
+
+- name: "Pup Cid"
+  handle: "@pupcid"
+  primary_platform: "tiktok"
+  secondary_platforms: []
+  tagline: "Community & Gaming"
+  avatar: "assets/images/avatars/pupcid.jpeg"
