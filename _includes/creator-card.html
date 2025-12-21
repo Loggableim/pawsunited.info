@@ -1,7 +1,11 @@
 {% assign creator = include.creator %}
 <article class="card creator-card">
   <div class="creator-card__avatar" aria-hidden="true">
-    {{ creator.name | slice: 0, 2 }}
+    {% if creator.avatar %}
+      <img src="{{ creator.avatar | relative_url }}" alt="{{ creator.name }}" class="creator-card__avatar-img">
+    {% else %}
+      {{ creator.name | slice: 0, 2 }}
+    {% endif %}
   </div>
   <h3 class="creator-card__name">{{ creator.name }}</h3>
   {% if creator.handle %}
