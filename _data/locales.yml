@@ -15,6 +15,7 @@ de:
   servers:
     title: "Unsere Game Server"
     text: "Entdecke unsere vielfältige Auswahl an Servern, die für jedes Spielerherz etwas bieten."
+    play_button: "Jetzt mitspielen"
   
   team:
     title: "Unser Team"
@@ -107,6 +108,7 @@ en:
   servers:
     title: "Our Game Servers"
     text: "Discover our diverse selection of servers offering something for every gaming enthusiast."
+    play_button: "Play Now"
   
   team:
     title: "Our Team"

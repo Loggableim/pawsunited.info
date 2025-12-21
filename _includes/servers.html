@@ -7,6 +7,7 @@
       </p>
     </div>
     <div class="grid grid--3">
+      {% assign play_button_text = site.data.locales[page.locale].servers.play_button %}
       {% for server in site.data.servers[page.locale] %}
         {% include server-card.html 
           name=server.name 
@@ -15,6 +16,7 @@
           description=server.description 
           status=server.status 
           vibe=server.vibe 
+          play_button=play_button_text
         %}
       {% endfor %}
     </div>
