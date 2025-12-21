@@ -1,12 +1,13 @@
 <section id="servers" class="section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-header__title">Unsere Game Server</h2>
+      <h2 class="section-header__title">{{ site.data.locales[page.locale].servers.title }}</h2>
       <p class="section-header__text">
-        Entdecke unsere vielfältige Auswahl an Servern, die für jedes Spielerherz etwas bieten.
+        {{ site.data.locales[page.locale].servers.text }}
       </p>
     </div>
     <div class="grid grid--3">
+      {% assign play_button_text = site.data.locales[page.locale].servers.play_button %}
       {% for server in site.data.servers[page.locale] %}
         {% include server-card.html 
           name=server.name 
@@ -15,6 +16,7 @@
           description=server.description 
           status=server.status 
           vibe=server.vibe 
+          play_button=play_button_text
         %}
       {% endfor %}
     </div>

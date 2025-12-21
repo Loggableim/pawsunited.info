@@ -1,5 +1,5 @@
 # PAWS UNITED - Game Servers
-# Schema:
+# Schema per locale:
 #   - name: Server display name
 #   - game: Game title
 #   - panel_url: Link to server panel
@@ -7,37 +7,74 @@
 #   - status: Server status (online, offline, maintenance)
 #   - vibe: Community vibe/atmosphere
 
-- name: "ARK Survival Evolved"
-  game: "ARK"
-  panel_url: "https://panel.pawsunited.info/c/a336278d"
-  description: "Überlebe in einer prähistorischen Welt voller Dinosaurier und Abenteuer"
-  status: "online"
-  vibe: "Abenteuer & Survival"
+de:
+  - name: "ARK Survival Evolved"
+    game: "ARK"
+    panel_url: "https://panel.pawsunited.info/c/a336278d"
+    description: "Überlebe in einer prähistorischen Welt voller Dinosaurier und Abenteuer"
+    status: "online"
+    vibe: "Abenteuer & Survival"
 
-- name: "Minecraft Bedrock"
-  game: "Minecraft"
-  panel_url: "https://panel.pawsunited.info/c/c41c2895"
-  description: "Crossplay-freundlicher Minecraft-Server für alle Plattformen"
-  status: "online"
-  vibe: "Kreativ & Community"
+  - name: "Minecraft Bedrock"
+    game: "Minecraft"
+    panel_url: "https://panel.pawsunited.info/c/c41c2895"
+    description: "Crossplay-freundlicher Minecraft-Server für alle Plattformen"
+    status: "online"
+    vibe: "Kreativ & Community"
 
-- name: "Minecraft Java"
-  game: "Minecraft"
-  panel_url: "https://panel.pawsunited.info/c/e6418acb"
-  description: "Klassische Java Edition für PC-Spieler mit Custom Mods"
-  status: "online"
-  vibe: "Modded & Vanilla"
+  - name: "Minecraft Java"
+    game: "Minecraft"
+    panel_url: "https://panel.pawsunited.info/c/e6418acb"
+    description: "Klassische Java Edition für PC-Spieler mit Custom Mods"
+    status: "online"
+    vibe: "Modded & Vanilla"
 
-- name: "Command & Conquer: Red Alert"
-  game: "C&C Red Alert"
-  panel_url: "https://panel.pawsunited.info/c/624f62cb"
-  description: "Retro-RTS-Action im Kalten Krieg - Tesla-Spulen inklusive!"
-  status: "online"
-  vibe: "Retro & Strategie"
+  - name: "Command & Conquer: Red Alert"
+    game: "C&C Red Alert"
+    panel_url: "https://panel.pawsunited.info/c/624f62cb"
+    description: "Retro-RTS-Action im Kalten Krieg - Tesla-Spulen inklusive!"
+    status: "online"
+    vibe: "Retro & Strategie"
 
-- name: "GTA V"
-  game: "GTA V"
-  panel_url: "https://panel.pawsunited.info/c/881f256c"
-  description: "Roleplay-Server mit einzigartigen Stories und Community-Events"
-  status: "online"
-  vibe: "Roleplay & Action"
+  - name: "GTA V"
+    game: "GTA V"
+    panel_url: "https://panel.pawsunited.info/c/881f256c"
+    description: "Roleplay-Server mit einzigartigen Stories und Community-Events"
+    status: "online"
+    vibe: "Roleplay & Action"
+
+en:
+  - name: "ARK Survival Evolved"
+    game: "ARK"
+    panel_url: "https://panel.pawsunited.info/c/a336278d"
+    description: "Survive in a prehistoric world full of dinosaurs and adventure"
+    status: "online"
+    vibe: "Adventure & Survival"
+
+  - name: "Minecraft Bedrock"
+    game: "Minecraft"
+    panel_url: "https://panel.pawsunited.info/c/c41c2895"
+    description: "Crossplay-friendly Minecraft server for all platforms"
+    status: "online"
+    vibe: "Creative & Community"
+
+  - name: "Minecraft Java"
+    game: "Minecraft"
+    panel_url: "https://panel.pawsunited.info/c/e6418acb"
+    description: "Classic Java Edition for PC players with custom mods"
+    status: "online"
+    vibe: "Modded & Vanilla"
+
+  - name: "Command & Conquer: Red Alert"
+    game: "C&C Red Alert"
+    panel_url: "https://panel.pawsunited.info/c/624f62cb"
+    description: "Retro RTS action in the Cold War - Tesla Coils included!"
+    status: "online"
+    vibe: "Retro & Strategy"
+
+  - name: "GTA V"
+    game: "GTA V"
+    panel_url: "https://panel.pawsunited.info/c/881f256c"
+    description: "Roleplay server with unique stories and community events"
+    status: "online"
+    vibe: "Roleplay & Action"
