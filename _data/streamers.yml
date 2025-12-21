@@ -13,6 +13,7 @@
   secondary_platforms:
     - "twitch"
   tagline: "Gaming & Furry Content Creator"
+  avatar: "assets/images/avatars/pyro_taidum.jpeg"
 
 - name: "FeuerFuchs"
   handle: "@derfeuerfuchs"
@@ -20,6 +21,7 @@
   secondary_platforms:
     - "youtube"
   tagline: "Der feurige Fuchs der Community"
+  avatar: "assets/images/avatars/derfeuerfuchs.jpeg"
 
 - name: "Turbofleck"
   handle: "@turbofleck"
@@ -27,6 +29,7 @@
   secondary_platforms:
     - "twitch"
   tagline: "High-Energy Gaming & Entertainment"
+  avatar: "assets/images/avatars/turbofleck.jpeg"
 
 - name: "Bouizs Spiros"
   handle: "@boz12427"
@@ -34,4 +37,4 @@
   secondary_platforms:
     - "youtube"
   tagline: "Variety Gaming & Creative Streams"
-
+  avatar: "assets/images/avatars/boz12427.jpeg"

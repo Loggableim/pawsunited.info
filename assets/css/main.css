@@ -304,6 +304,13 @@ p {
   font-weight: var(--font-weight-bold);
   color: var(--color-off-white);
   text-transform: uppercase;
+  overflow: hidden;
+}
+
+.creator-card__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .creator-card__name {
