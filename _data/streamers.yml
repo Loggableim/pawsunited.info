@@ -45,3 +45,19 @@
   secondary_platforms: []
   tagline: "Community & Gaming"
   avatar: "assets/images/avatars/pupcid.jpeg"
+
+- name: "wrexythefurry"
+  handle: "@wrexyfurry"
+  primary_platform: "tiktok"
+  secondary_platforms: []
+  tagline: "Furry Content Creator"
+  avatar: "assets/images/avatars/wrexythefurry.jpeg"
+  url: "https://www.tiktok.com/@wrexyfurry"
+
+- name: "tombluedragon"
+  handle: "@tombluedragon"
+  primary_platform: "tiktok"
+  secondary_platforms: []
+  tagline: "Gaming & Streaming"
+  avatar: "assets/images/avatars/tombluedragon.jpeg"
+  url: "https://www.tiktok.com/@tombluedragon"
