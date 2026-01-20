@@ -18,7 +18,7 @@ de:
     play_button: "Jetzt mitspielen"
   
   team:
-    title: "Unser Team"
+    title: "Moderatoren & Technische Administration"
     text: "Lerne die engagierten Mitglieder kennen, die unsere Community am Leben erhalten."
   
   creators:
@@ -111,7 +111,7 @@ en:
     play_button: "Play Now"
   
   team:
-    title: "Our Team"
+    title: "Moderators & Technical Administration"
     text: "Meet the dedicated members who keep our community thriving."
   
   creators:

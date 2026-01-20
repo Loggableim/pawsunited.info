@@ -7,11 +7,11 @@
       </p>
     </div>
     <div class="grid grid--3">
-      {% for team_role in site.data.team-roles[page.locale] %}
+      {% for member in site.data.team-members[page.locale] %}
         {% include creator-card.html 
-          role=team_role.role 
-          description=team_role.description 
-          icon=team_role.icon 
+          role=member.name 
+          description=member.role 
+          icon="shield" 
         %}
       {% endfor %}
     </div>

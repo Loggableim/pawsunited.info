@@ -1,0 +1,54 @@
+# PAWS UNITED - Team Members
+# Schema per locale:
+#   - name: Member name
+#   - role: Member role (in German for 'de', in English for 'en')
+
+de:
+  - name: "ghostbunnywho"
+    role: "Technik"
+  
+  - name: "Scorpion"
+    role: "Moderator"
+  
+  - name: "Kitsus Gehirn"
+    role: "Moderator"
+  
+  - name: "Berserker"
+    role: "Moderator"
+  
+  - name: "Bouizs Spiros"
+    role: "Moderator, Technik"
+  
+  - name: "Mordessa"
+    role: "Moderatorin"
+  
+  - name: "Kawumm"
+    role: "Moderator"
+  
+  - name: "SilberFuchs"
+    role: "Moderator"
+
+en:
+  - name: "ghostbunnywho"
+    role: "Tech"
+  
+  - name: "Scorpion"
+    role: "Moderator"
+  
+  - name: "Kitsus Gehirn"
+    role: "Moderator"
+  
+  - name: "Berserker"
+    role: "Moderator"
+  
+  - name: "Bouizs Spiros"
+    role: "Moderator, Tech"
+  
+  - name: "Mordessa"
+    role: "Moderator"
+  
+  - name: "Kawumm"
+    role: "Moderator"
+  
+  - name: "SilberFuchs"
+    role: "Moderator"

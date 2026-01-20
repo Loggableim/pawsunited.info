@@ -353,6 +353,7 @@ p {
   background: rgba(255, 255, 255, 0.05);
   color: var(--color-text-secondary);
   transition: all var(--transition-fast);
+  text-decoration: none;
 }
 
 .creator-card__platform:hover {

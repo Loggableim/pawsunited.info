@@ -47,9 +47,15 @@
     <p class="creator-card__tagline">{{ creator.tagline }}</p>
     {% endif %}
     <div class="creator-card__platforms">
+      {% if creator.url %}
+      <a href="{{ creator.url }}" target="_blank" rel="noopener" class="creator-card__platform creator-card__platform--primary" title="{{ creator.primary_platform | capitalize }}">
+        {% include platform-icon.html platform=creator.primary_platform %}
+      </a>
+      {% else %}
       <span class="creator-card__platform creator-card__platform--primary" title="{{ creator.primary_platform | capitalize }}">
         {% include platform-icon.html platform=creator.primary_platform %}
       </span>
+      {% endif %}
       {% for platform in creator.secondary_platforms %}
       <span class="creator-card__platform" title="{{ platform | capitalize }}">
         {% include platform-icon.html platform=platform %}
