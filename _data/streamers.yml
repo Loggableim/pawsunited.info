@@ -23,14 +23,6 @@
   tagline: "Der feurige Fuchs der Community"
   avatar: "assets/images/avatars/derfeuerfuchs.jpeg"
 
-- name: "Turbofleck"
-  handle: "@turbofleck"
-  primary_platform: "tiktok"
-  secondary_platforms:
-    - "twitch"
-  tagline: "High-Energy Gaming & Entertainment"
-  avatar: "assets/images/avatars/turbofleck.jpeg"
-
 - name: "Bouizs Spiros"
   handle: "@boz12427"
   primary_platform: "tiktok"
@@ -61,3 +53,25 @@
   tagline: "Gaming & Streaming"
   avatar: "assets/images/avatars/tombluedragon.jpeg"
   url: "https://www.tiktok.com/@tombluedragon"
+
+- name: "sabari94"
+  handle: "@sabari94_official"
+  primary_platform: "tiktok"
+  secondary_platforms: []
+  tagline: "Streamer & Music Producer"
+  url: "https://www.tiktok.com/@sabari94_official"
+
+- name: "ThePlayfulDrachi"
+  handle: "@theplayfuldrachi"
+  primary_platform: "twitch"
+  secondary_platforms:
+    - "tiktok"
+  tagline: "Streamer"
+  url: "https://www.twitch.tv/theplayfuldrachi"
+
+- name: "noctobun"
+  handle: "@noctobun"
+  primary_platform: "tiktok"
+  secondary_platforms: []
+  tagline: "Streamer"
+  url: "https://www.tiktok.com/@noctobun"
