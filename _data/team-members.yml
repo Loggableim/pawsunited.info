@@ -4,16 +4,10 @@
 #   - role: Member role (in German for 'de', in English for 'en')
 
 de:
-  - name: "ghostbunnywho"
-    role: "Technik"
-  
   - name: "Scorpion"
     role: "Moderator"
   
   - name: "Kitsus Gehirn"
-    role: "Moderator"
-  
-  - name: "Berserker"
     role: "Moderator"
   
   - name: "Bouizs Spiros"
@@ -29,16 +23,10 @@ de:
     role: "Moderator"
 
 en:
-  - name: "ghostbunnywho"
-    role: "Tech"
-  
   - name: "Scorpion"
     role: "Moderator"
   
   - name: "Kitsus Gehirn"
-    role: "Moderator"
-  
-  - name: "Berserker"
     role: "Moderator"
   
   - name: "Bouizs Spiros"
