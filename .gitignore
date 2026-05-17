@@ -39,3 +39,6 @@ _site_built/
 # Downloads
 *.iso
 __pycache__/\n*.pyc\n
+__pycache__/
+scripts/check_discord_api.py
+scripts/test_api.py

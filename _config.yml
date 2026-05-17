@@ -19,11 +19,15 @@ exclude:
   - vendor
   - README.md
   - LICENSE
+  - _site_built
+  - scripts
+  - _preview
 
-# Default front matter
+# Default front matter — nur auf Index-Seiten anwenden
 defaults:
   - scope:
       path: ""
+      type: "pages"
     values:
       layout: default
 
