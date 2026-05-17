@@ -1,0 +1,36 @@
+{
+  "brand": {
+    "name": "PawsUnited",
+    "domain": "pawsunited.info",
+    "tagline": "Where Paws Unite, Legends Rise",
+    "tagline_de": "Wo Pfoten sich vereinen, Legenden entstehen",
+    "description": "PawsUnited ist eine Gaming-Community – ein Ort für Spieler, Kreative und Abenteurer. Egal ob Minecraft-Builder, Discord-Stratege oder Fantasy-Fan: Hier finden sich gleichgesinnte Pfoten.",
+    "founded": 2024,
+    "colors": {
+      "primary": "#FF6B35",
+      "secondary": "#7B2D8E",
+      "accent": "#00C9A7",
+      "dark": "#1A1A2E",
+      "darker": "#0F0F23",
+      "light": "#F8F4F0",
+      "warm": "#FFD166",
+      "frost": "#4ECDC4",
+      "ember": "#E84855"
+    },
+    "fonts": {
+      "display": "'Cinzel', 'Georgia', serif",
+      "body": "'Inter', 'Segoe UI', system-ui, sans-serif",
+      "mono": "'JetBrains Mono', 'Fira Code', monospace"
+    },
+    "social": {
+      "discord": "https://discord.gg/pawsunited",
+      "github": "https://github.com/PawsUnited",
+      "youtube": "https://youtube.com/@PawsUnited"
+    },
+    "server": {
+      "minecraft_ip": "play.pawsunited.info",
+      "minecraft_version": "1.20.4",
+      "server_type": "Survival / Creative Hybrid"
+    }
+  }
+}
