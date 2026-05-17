@@ -1,0 +1,29 @@
+# PAWS UNITED - Team Members
+# Schema:
+#   - initial: Single letter initial for avatar display
+#     name: Member display name
+#     role: Member role / position
+
+- initial: "S"
+  name: "Scorpion"
+  role: "Moderator"
+
+- initial: "K"
+  name: "Kitsus Gehirn"
+  role: "Moderator"
+
+- initial: "B"
+  name: "Bouizs Spiros"
+  role: "Moderator, Tech"
+
+- initial: "M"
+  name: "Mordessa"
+  role: "Moderator"
+
+- initial: "K"
+  name: "Kawumm"
+  role: "Moderator"
+
+- initial: "S"
+  name: "SilberFuchs"
+  role: "Moderator"

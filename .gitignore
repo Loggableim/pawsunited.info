@@ -1,34 +1,41 @@
-# Jekyll build output
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+     1|# Jekyll build output
+     2|_site/
+     3|.sass-cache/
+     4|.jekyll-cache/
+     5|.jekyll-metadata
+     6|
+     7|# Bundle
+     8|.bundle/
+     9|vendor/
+    10|Gemfile.lock
+    11|
+    12|# IDE
+    13|.idea/
+    14|.vscode/
+    15|*.swp
+    16|*.swo
+    17|
+    18|# OS
+    19|.DS_Store
+    20|Thumbs.db
+    21|
+    22|# Logs
+    23|*.log
+    24|
+    25|# Preview build
+    26|_preview/
+    27|
+    28|# Original asset source
+    29|pawsunited/
+    30|
+    31|# Test scripts
+    32|scripts/check_discord_api.py
+    33|scripts/test_api.py
+    34|scripts/gh_action_test.py
+    35|
+# Local build output
+_site_built/
 
-# Bundle
-.bundle/
-vendor/
-Gemfile.lock
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Preview build
-_preview/
-
-# Original asset source
-pawsunited/
-
-# Test scripts
-scripts/check_discord_api.py
-scripts/test_api.py
-scripts/gh_action_test.py
+# Downloads
+*.iso
+__pycache__/\n*.pyc\n

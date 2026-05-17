@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.og_title }}">
+<meta property="og:description" content="{{ page.og_description }}">
+<meta property="og:image" content="https://pawsunited.info/assets/img/logos/pawsunited-alt.png">
+<meta property="og:url" content="{{ page.og_url | default: page.url | absolute_url }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{ page.og_locale | default: 'de_DE' }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.twitter_title | default: page.og_title }}">
+<meta name="twitter:description" content="{{ page.twitter_description | default: page.og_description }}">
+<meta name="twitter:image" content="https://pawsunited.info/assets/img/logos/pawsunited-alt.png">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PAWS UNITED",
+  "url": "https://pawsunited.info",
+  "logo": "https://pawsunited.info/assets/img/logos/pawsunited-alt.png",
+  "description": "{{ page.jsonld_description | default: page.description }}",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://discord.gg/pawsunited",
+    "https://tiktok.com/@pawsunited"
+  ]
+}
+</script>
+
+<!-- Favicon: Neon Paw Print SVG Data-URL -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2D95'/%3E%3Cstop offset='100%25' stop-color='%23A855F7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M32 8c-4 0-7 3-7 7 0 2 .7 4 2 5-1 1-2 3-2 5 0 4 3 7 7 7s7-3 7-7c0-2-.7-4-2-5 1-1 2-3 2-5 0-4-3-7-7-7zM12 20c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zm40 0c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zM18 38c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4zm28 0c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4z'/%3E%3C/svg%3E" type="image/svg+xml">
+
+<!-- SEO: hreflang + canonical -->
+{% assign site_lang = page.lang | default: 'de' %}
+{% assign languages = site.data.locales.languages %}
+{% for lang_hash in languages %}
+  {% assign lc = lang_hash[0] %}
+  {% assign lang_data = lang_hash[1] %}
+  {% if lc == 'de' %}
+<link rel="alternate" href="https://pawsunited.info/" hreflang="de" />
+  {% else %}
+<link rel="alternate" href="https://pawsunited.info{{ lang_data.path }}" hreflang="{{ lc }}" />
+  {% endif %}
+{% endfor %}
+{% assign xdefault_lang = languages['en'] %}
+<link rel="alternate" href="https://pawsunited.info{{ xdefault_lang.path }}" hreflang="x-default" />
+{% assign canon_path = languages[site_lang].path | default: '/' %}
+<link rel="canonical" href="https://pawsunited.info{{ canon_path }}" />
+<meta name="robots" content="index, follow">
+
+<script>
+(function(){var l=document.documentElement.lang||'de';var b=(navigator.language||'').substr(0,2).toLowerCase();var s={de:1,en:1,fr:1,es:1,it:1,pt:1,nl:1,ru:1,sv:1};if(!s[b]||b===l)return;if(sessionStorage.getItem('paws_choice'))return;{% assign languages = site.data.locales.languages %}var p={{% for lang_hash in languages %}{% assign lc = lang_hash[0] %}{% assign lang_data = lang_hash[1] %}'{{ lc }}':'{{ lang_data.path }}'{% unless forloop.last %},{% endunless %}{% endfor %}};window.location.href=p[b];})();
+</script>
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">

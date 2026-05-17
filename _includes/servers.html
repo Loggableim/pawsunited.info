@@ -1,24 +1,24 @@
-<section id="servers" class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-header__title">{{ site.data.locales[page.locale].servers.title }}</h2>
-      <p class="section-header__text">
-        {{ site.data.locales[page.locale].servers.text }}
-      </p>
+{% assign servers = site.data.servers %}
+{% assign lang = page.lang | default: 'de' %}
+
+<div class="server-carousel" id="serverCarousel">
+  <div class="server-carousel__track" id="carouselTrack">
+    {% for s in servers %}
+    <div class="server-carousel__slide">
+      <div class="server-card">
+        <span class="tag">{{ s.tag }}</span>
+        <h3>{{ s.icon }} {{ s.name }}</h3>
+        {% if lang == 'en' %}
+        <p>{{ s.desc_en }}</p>
+        {% else %}
+        <p>{{ s.desc }}</p>
+        {% endif %}
+        <div class="ip">▸ {{ s.ip }}</div>
+      </div>
     </div>
-    <div class="grid grid--3">
-      {% assign play_button_text = site.data.locales[page.locale].servers.play_button %}
-      {% for server in site.data.servers[page.locale] %}
-        {% include server-card.html 
-          name=server.name 
-          game=server.game 
-          panel_url=server.panel_url 
-          description=server.description 
-          status=server.status 
-          vibe=server.vibe 
-          play_button=play_button_text
-        %}
-      {% endfor %}
-    </div>
+    {% endfor %}
   </div>
-</section>
+  <div class="carousel-nav" id="carouselNav"></div>
+  <button class="carousel-arrow carousel-arrow--prev" id="carouselPrev" aria-label="{{ page.carousel_prev | default: 'Vorheriger' }}">◀</button>
+  <button class="carousel-arrow carousel-arrow--next" id="carouselNext" aria-label="{{ page.carousel_next | default: 'Nächster' }}">▶</button>
+</div>

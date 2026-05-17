@@ -1,128 +1,85 @@
-# PAWS UNITED - Featured Creators
+# PAWS UNITED - Featured Creators / Streamers
 # Schema:
 #   - name: Creator display name
-#   - handle: Social media handle
-#   - primary_platform: Main streaming platform (twitch, youtube, tiktok, kick)
-#   - secondary_platforms: Array of additional platforms
-#   - tagline: Optional one-line description (max ~60 chars)
-#   - avatar: Optional custom avatar image path (defaults to initials)
-#   - display: "raw" for transparent/freigestellte images, "framed" for others
+#     handle: Social media handle
+#     tiktok: Full TikTok profile URL
+#     avatar: Avatar image path (relative to site root)
+#     status: Stream status (Online, Offline, Live)
 
 - name: "FeuerFuchs"
   handle: "@derfeuerfuchs"
-  primary_platform: "tiktok"
-  secondary_platforms:
-    - "youtube"
-  tagline: "Der feurige Fuchs der Community"
+  tiktok: "https://www.tiktok.com/@derfeuerfuchs"
   avatar: "assets/images/avatars/derfeuerfuchs.jpeg"
-  url: "https://www.tiktok.com/@derfeuerfuchs"
-  display: "framed"
+  status: "Offline"
 
 - name: "Bouizs Spiros"
   handle: "@boz12427"
-  primary_platform: "tiktok"
-  secondary_platforms:
-    - "youtube"
-  tagline: "Variety Gaming & Creative Streams"
+  tiktok: "https://www.tiktok.com/@boz12427"
   avatar: "assets/images/avatars/boz12427.jpeg"
-  url: "https://www.tiktok.com/@boz12427"
-  display: "framed"
+  status: "Offline"
 
 - name: "Pup Cid"
   handle: "@pupcid"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Community & Gaming"
+  tiktok: "https://www.tiktok.com/@pupcid"
   avatar: "assets/images/avatars/pupcid.jpeg"
-  url: "https://www.tiktok.com/@pupcid"
-  display: "framed"
+  status: "Offline"
 
 - name: "wrexythefurry"
   handle: "@wrexyfurry"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Furry Content Creator"
+  tiktok: "https://www.tiktok.com/@wrexyfurry"
   avatar: "assets/images/avatars/wrexythefurry.jpeg"
-  url: "https://www.tiktok.com/@wrexyfurry"
-  display: "framed"
+  status: "Offline"
 
 - name: "tombluedragon"
   handle: "@tombluedragon"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Gaming & Streaming"
+  tiktok: "https://www.tiktok.com/@tombluedragon"
   avatar: "assets/images/avatars/tombluedragon.jpeg"
-  url: "https://www.tiktok.com/@tombluedragon"
-  display: "framed"
+  status: "Offline"
 
 - name: "sabari94"
   handle: "@sabari94_official"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Streamer & Music Producer"
+  tiktok: "https://www.tiktok.com/@sabari94_official"
   avatar: "assets/img/characters/sabari.png"
-  url: "https://www.tiktok.com/@sabari94_official"
-  display: "raw"
+  status: "Offline"
 
 - name: "noctobun"
   handle: "@noctobun"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Streamer"
+  tiktok: "https://www.tiktok.com/@noctobun"
   avatar: "assets/img/characters/nocto.png"
-  url: "https://www.tiktok.com/@noctobun"
-  display: "raw"
+  status: "Offline"
 
 - name: "Virox Bloodfang"
   handle: "@viroxbloodfang"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Flauschiger Content Creator"
+  tiktok: "https://www.tiktok.com/@viroxbloodfang"
   avatar: "assets/img/characters/viroxbloodfang.png"
-  url: "https://www.tiktok.com/@viroxbloodfang"
-  display: "raw"
+  status: "Offline"
 
 - name: "Chef Mahlzeit"
   handle: "@chefmahlzeit"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Gaming & Kulinarik"
+  tiktok: "https://www.tiktok.com/@chefmahlzeit"
   avatar: "assets/img/characters/chefmahlzeit.png"
-  url: "https://www.tiktok.com/@chefmahlzeit"
-  display: "raw"
+  status: "Offline"
 
 - name: "Xais & Mojita"
   handle: "@xais_mojita"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Duo Content Creators"
+  tiktok: "https://www.tiktok.com/@xais_mojita"
   avatar: "assets/img/characters/xaismojita.png"
-  url: "https://www.tiktok.com/@xais_mojita"
-  display: "raw"
+  status: "Offline"
 
 - name: "Keksi"
   handle: "@keksesindtoll"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Gaming & Community"
+  tiktok: "https://www.tiktok.com/@keksesindtoll"
   avatar: "assets/img/streamers/keksi5.png"
-  url: "https://www.tiktok.com/@keksesindtoll"
-  display: "raw"
+  status: "Offline"
 
 - name: "Fluxflauschpaw"
   handle: "@fluxflauschpaw"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Furry & Flauschig"
+  tiktok: "https://www.tiktok.com/@fluxflauschpaw"
   avatar: "assets/img/streamers/fluxflauschpaw.png"
-  url: "https://www.tiktok.com/@fluxflauschpaw"
-  display: "framed"
+  status: "Offline"
 
 - name: "Atamiel Fuchs"
   handle: "@atamiel_fuchs"
-  primary_platform: "tiktok"
-  secondary_platforms: []
-  tagline: "Fuchsiger Content Creator"
+  tiktok: "https://www.tiktok.com/@atamiel_fuchs"
   avatar: "assets/img/streamers/atamiel.png"
-  url: "https://www.tiktok.com/@atamiel_fuchs"
-  display: "framed"
+  status: "Offline"

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pawsunited.info/sitemap.xml

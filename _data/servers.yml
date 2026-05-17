@@ -1,80 +1,50 @@
 # PAWS UNITED - Game Servers
-# Schema per locale:
+# Schema:
 #   - name: Server display name
-#   - game: Game title
-#   - panel_url: Link to server panel
-#   - description: Short server description
-#   - status: Server status (online, offline, maintenance)
-#   - vibe: Community vibe/atmosphere
+#     icon: Emoji icon for the server
+#     tag: Status tag (Online, Offline, Maintenance)
+#     desc: Short server description (German)
+#     desc_en: Short server description (English)
+#     ip: Server IP address
 
-de:
-  - name: "ARK Survival Evolved"
-    game: "ARK"
-    panel_url: "https://panel.pawsunited.info/c/a336278d"
-    description: "Überlebe in einer prähistorischen Welt voller Dinosaurier und Abenteuer"
-    status: "online"
-    vibe: "Abenteuer & Survival"
+- name: "Minecraft"
+  icon: "🧱"
+  tag: "Online"
+  desc: "Java + Bedrock Crossplay. Eigene Plugins, Grundstücks-Claims, wöchentliche Bau-Events."
+  desc_en: "Java + Bedrock crossplay. Custom plugins, land claims, weekly build events."
+  ip: "play.pawsunited.info:25565"
 
-  - name: "Minecraft Bedrock"
-    game: "Minecraft"
-    panel_url: "https://panel.pawsunited.info/c/c41c2895"
-    description: "Crossplay-freundlicher Minecraft-Server für alle Plattformen"
-    status: "online"
-    vibe: "Kreativ & Community"
+- name: "ARK: Survival"
+  icon: "🦖"
+  tag: "Online"
+  desc: "Erhöhte Raten, aktive Admins. Dinosaurier zähmen, Stämme gründen, epische Raids."
+  desc_en: "Boosted rates, active admins. Tame dinosaurs, build tribes, raid in style."
+  ip: "ark.pawsunited.info"
 
-  - name: "Minecraft Java"
-    game: "Minecraft"
-    panel_url: "https://panel.pawsunited.info/c/e6418acb"
-    description: "Klassische Java Edition für PC-Spieler mit Custom Mods"
-    status: "online"
-    vibe: "Modded & Vanilla"
+- name: "GTA V RP"
+  icon: "🚗"
+  tag: "Online"
+  desc: "Eigener Rollenspiel-Server mit einzigartigen Storylines und spielergetriebener Wirtschaft."
+  desc_en: "Custom roleplay server with unique storylines and player-driven economy."
+  ip: "gta.pawsunited.info"
 
-  - name: "Command & Conquer: Red Alert"
-    game: "C&C Red Alert"
-    panel_url: "https://panel.pawsunited.info/c/624f62cb"
-    description: "Retro-RTS-Action im Kalten Krieg - Tesla-Spulen inklusive!"
-    status: "online"
-    vibe: "Retro & Strategie"
+- name: "C&C Red Alert"
+  icon: "⚡"
+  tag: "Online"
+  desc: "Klassische RTS-Action. Eigene Maps, Tesla-Spulen, epische 4v4-Matches."
+  desc_en: "Classic RTS action. Custom maps, Tesla coils, epic 4v4 showdowns."
+  ip: "cnc.pawsunited.info"
 
-  - name: "GTA V"
-    game: "GTA V"
-    panel_url: "https://panel.pawsunited.info/c/881f256c"
-    description: "Roleplay-Server mit einzigartigen Stories und Community-Events"
-    status: "online"
-    vibe: "Roleplay & Action"
+- name: "Valheim"
+  icon: "🎮"
+  tag: "Online"
+  desc: "Wikinger-Survival mit dem Rudel. Bauen, erkunden, Bosse legen — gemeinsam."
+  desc_en: "Viking survival with the pack. Build, explore, slay bosses together."
+  ip: "valheim.pawsunited.info"
 
-en:
-  - name: "ARK Survival Evolved"
-    game: "ARK"
-    panel_url: "https://panel.pawsunited.info/c/a336278d"
-    description: "Survive in a prehistoric world full of dinosaurs and adventure"
-    status: "online"
-    vibe: "Adventure & Survival"
-
-  - name: "Minecraft Bedrock"
-    game: "Minecraft"
-    panel_url: "https://panel.pawsunited.info/c/c41c2895"
-    description: "Crossplay-friendly Minecraft server for all platforms"
-    status: "online"
-    vibe: "Creative & Community"
-
-  - name: "Minecraft Java"
-    game: "Minecraft"
-    panel_url: "https://panel.pawsunited.info/c/e6418acb"
-    description: "Classic Java Edition for PC players with custom mods"
-    status: "online"
-    vibe: "Modded & Vanilla"
-
-  - name: "Command & Conquer: Red Alert"
-    game: "C&C Red Alert"
-    panel_url: "https://panel.pawsunited.info/c/624f62cb"
-    description: "Retro RTS action in the Cold War - Tesla Coils included!"
-    status: "online"
-    vibe: "Retro & Strategy"
-
-  - name: "GTA V"
-    game: "GTA V"
-    panel_url: "https://panel.pawsunited.info/c/881f256c"
-    description: "Roleplay server with unique stories and community events"
-    status: "online"
-    vibe: "Roleplay & Action"
+- name: "CS2 Community"
+  icon: "🔫"
+  tag: "Online"
+  desc: "Deathmatch, Retake, Surf — Community-betriebener Counter-Strike 2 Server."
+  desc_en: "Deathmatch, retake, surf — community-run Counter-Strike 2 server."
+  ip: "cs2.pawsunited.info"

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- DEUTSCH (DE) - Hauptseite -->
+  <url>
+    <loc>https://pawsunited.info/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- ENGLISH (EN) -->
+  <url>
+    <loc>https://pawsunited.info/en/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- FRANÇAIS (FR) -->
+  <url>
+    <loc>https://pawsunited.info/fr/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- ESPAÑOL (ES) -->
+  <url>
+    <loc>https://pawsunited.info/es/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- ITALIANO (IT) -->
+  <url>
+    <loc>https://pawsunited.info/it/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- PORTUGUÊS (PT) -->
+  <url>
+    <loc>https://pawsunited.info/pt/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- NEDERLANDS (NL) -->
+  <url>
+    <loc>https://pawsunited.info/nl/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- РУССКИЙ (RU) -->
+  <url>
+    <loc>https://pawsunited.info/ru/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+  <!-- SVENSKA (SV) -->
+  <url>
+    <loc>https://pawsunited.info/sv/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pawsunited.info/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pawsunited.info/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pawsunited.info/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pawsunited.info/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://pawsunited.info/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pawsunited.info/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://pawsunited.info/nl/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pawsunited.info/ru/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://pawsunited.info/sv/" />
+  </url>
+
+</urlset>

@@ -1,0 +1,17 @@
+{% assign streamers = site.data.streamers %}
+
+<div class="streamer-grid">
+  {% for s in streamers %}
+  <a href="{{ s.tiktok }}" target="_blank" class="streamer-card">
+    <div class="streamer-avatar"><img src="/{{ s.avatar }}" alt="{{ s.name }}"></div>
+    <div class="name">{{ s.name }}</div>
+    <div class="handle">{{ s.handle }}</div>
+    {% assign status_class = 'streamer-badge--off' %}
+    {% assign status_text = s.status | default: 'Offline' %}
+    {% if s.status == 'Live' or s.status == 'Online' %}
+      {% assign status_class = 'streamer-badge--live' %}
+    {% endif %}
+    <span class="streamer-badge {{ status_class }}">{{ status_text }}</span>
+  </a>
+  {% endfor %}
+</div>

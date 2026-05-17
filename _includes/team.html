@@ -1,19 +1,11 @@
-<section id="team" class="section section--alt">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-header__title">{{ site.data.locales[page.locale].team.title }}</h2>
-      <p class="section-header__text">
-        {{ site.data.locales[page.locale].team.text }}
-      </p>
-    </div>
-    <div class="grid grid--3">
-      {% for member in site.data.team-members[page.locale] %}
-        {% include creator-card.html 
-          role=member.name 
-          description=member.role 
-          icon="shield" 
-        %}
-      {% endfor %}
-    </div>
+{% assign team = site.data.team %}
+
+<div class="team-grid">
+  {% for member in team %}
+  <div class="team-card">
+    <div class="initial">{{ member.initial }}</div>
+    <div class="tname">{{ member.name }}</div>
+    <div class="trole">{{ member.role }}</div>
   </div>
-</section>
+  {% endfor %}
+</div>

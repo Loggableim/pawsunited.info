@@ -1,0 +1,15 @@
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack">
+    {% for item in site.data.content[page.lang].marquee_items %}
+      {% if item.ip %}
+    <span>{{ item.ip }}</span>
+      {% elsif item.live %}
+    <span><span class="lv">🔴</span> <span class="lv">{{ item.count }}</span> {{ item.label }}</span>
+      {% elsif item.label %}
+    <span>👥 <span class="hl">{{ item.count }}</span> {{ item.label }}</span>
+      {% else %}
+    <span>{{ item.text }}</span>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
