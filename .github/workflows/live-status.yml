@@ -22,12 +22,19 @@ jobs:
       - name: Install dependencies
         run: pip install websockets
 
+      - name: Debug auth
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: python scripts/gh_action_test.py
+
       - name: Collect live status
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: python scripts/live_status.py
 
       - name: Commit & push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "PawsUnited Bot"
           git config user.email "bot@pawsunited.info"
