@@ -20,11 +20,11 @@
           {% assign lc = lang_hash[0] %}
           {% assign lang_data = lang_hash[1] %}
           {% if lc == site_lang %}
-            <li><a href="#">{{ lang_data.flag }} {{ lang_data.code }}</a></li>
+            <li><a href="#" onclick="sessionStorage.setItem('paws_choice','1')">{{ lang_data.flag }} {{ lang_data.code }}</a></li>
           {% elsif lc == 'de' %}
-            <li><a href="/">{{ lang_data.flag }} {{ lang_data.code }}</a></li>
+            <li><a href="/" onclick="sessionStorage.setItem('paws_choice','1')">{{ lang_data.flag }} {{ lang_data.code }}</a></li>
           {% else %}
-            <li><a href="{{ lang_data.path }}">{{ lang_data.flag }} {{ lang_data.code }}</a></li>
+            <li><a href="{{ lang_data.path }}" onclick="sessionStorage.setItem('paws_choice','1')">{{ lang_data.flag }} {{ lang_data.code }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
