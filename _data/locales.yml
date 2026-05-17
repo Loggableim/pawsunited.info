@@ -4,13 +4,18 @@
 de:
   meta:
     default_title: "PAWS UNITED — Furry Gaming Community"
-    default_description: "Ein Zuhause für Gamer, Furrys, Streamer & Creator. Game Server, Events und eine lebendige Community."
+    default_description: "Ein Zuhause für Gamer, Furries, Streamer & Creator. Game Server, Events und eine lebendige Community."
+  
+  nav:
+    servers: "Server"
+    team: "Team"
+    creators: "Creator"
   
   hero:
     title: "PAWS UNITED"
-    subtitle: "Ein Zuhause für Gamer, Furrys, Streamer & Creator — Furry-freundliche Gaming Community mit eigenen Servern."
-    discord_button: "Discord Beitreten"
-    discover_servers_button: "Server Entdecken"
+    subtitle: "Ein Zuhause für Gamer, Furries, Streamer & Creator — Furry-freundliche Gaming Community mit eigenen Servern."
+    discord_button: "Discord beitreten"
+    discover_servers_button: "Server entdecken"
   
   servers:
     title: "Unsere Game Server"
@@ -26,7 +31,7 @@ de:
     text: "Talentierte Creator aus unserer Community, die auf verschiedenen Plattformen streamen und Content erstellen."
   
   features:
-    title: "Was Macht Uns Besonders"
+    title: "Das macht uns besonders"
     text: "Eine kuratierte Community für Creator und Gamer mit Fokus auf Qualität und Zusammenarbeit."
     curated_membership:
       title: "Kuratierte Mitgliedschaft"
@@ -35,20 +40,20 @@ de:
       title: "Plattformübergreifendes Wachstum"
       text: "Erreiche neue Zuschauer über Twitch, YouTube, TikTok und Kick durch gemeinsame Promotion."
     creator_collaboration:
-      title: "Creator-Kollaboration"
-      text: "Vernetze dich mit anderen Creatorn für gemeinsame Projekte und gegenseitige Unterstützung."
+      title: "Creator-Kooperation"
+      text: "Vernetze dich mit anderen Creators für gemeinsame Projekte und gegenseitige Unterstützung."
     moderated_discord:
       title: "Moderierter Discord"
       text: "Ein sicherer, freundlicher Raum mit aktiven Moderatoren und klaren Community-Richtlinien."
     events_collabs:
-      title: "Events & Collabs"
+      title: "Events & Kooperationen"
       text: "Regelmäßige Community-Events, gemeinsame Streams und kollaborative Projekte."
     visibility_support:
       title: "Sichtbarkeit & Support"
       text: "Featured Creator-Spotlight und Community-Support für deine Content-Ziele."
   
   why_join:
-    title: "Warum Beitreten?"
+    title: "Warum beitreten?"
     text: "Entdecke die Vorteile unserer engagierten Gaming-Community."
     benefits:
       shared_reach:
@@ -62,9 +67,9 @@ de:
         text: "Erlebe tägliche Streams von talentierten Community-Membern auf verschiedenen Plattformen."
       support_feedback:
         title: "Support & Feedback"
-        text: "Erhalte konstruktives Feedback und Unterstützung von erfahrenen Creatorn und Community-Mitgliedern."
+        text: "Erhalte konstruktives Feedback und Unterstützung von erfahrenen Creators und Community-Mitgliedern."
       events_collabs:
-        title: "Events & Collabs"
+        title: "Events & Kooperationen"
         text: "Nimm teil an regelmäßigen Community-Events, Turnieren und kollaborativen Streaming-Sessions."
       relaxed_atmosphere:
         title: "Entspannte Atmosphäre"
@@ -74,30 +79,35 @@ de:
     title: "Vertrauenswürdige Community"
     text: "Wir legen Wert auf Qualität, Respekt und eine positive Atmosphäre."
     badges:
-      moderated: "Aktiv Moderiert"
-      creator_led: "Creator-Geführt"
+      moderated: "Aktiv moderiert"
+      creator_led: "Creator-geführt"
       no_spam: "Kein Spam"
       respectful: "Respektvoll"
       active_community: "Aktive Community"
   
   cta:
     title: "Bereit, Teil der Community zu werden?"
-    text: "Tritt unserem Discord bei und entdecke eine lebendige Community von Gamern, Creatorn und Furrys."
-    discord_button: "Discord Beitreten"
+    text: "Tritt unserem Discord bei und entdecke eine lebendige Community von Gamern, Creators und Furries."
+    discord_button: "Discord beitreten"
   
   footer:
     logo_alt: "PAWS UNITED Logo"
-    text: "Furry-freundliche Gaming Community mit eigenen Game Servern, Creator-Support und Events."
+    text: "Furry-freundliche Gaming-Community mit eigenen Game Servern, Creator-Support und Events."
     discord_link_title: "Tritt unserem Discord bei"
     server_link: "Game Server"
     team_link: "Team"
-    creator_link: "Creator"
+    creator_link: "Creators"
     copyright: "© 2025 PAWS UNITED. Alle Rechte vorbehalten."
 
 en:
   meta:
     default_title: "PAWS UNITED — Furry Gaming Community"
     default_description: "A home for gamers, furries, streamers & creators. Game servers, events and a vibrant community."
+  
+  nav:
+    servers: "Servers"
+    team: "Team"
+    creators: "Creators"
   
   hero:
     title: "PAWS UNITED"

@@ -1161,14 +1161,31 @@ a:focus-visible {
 }
 
 /* ==========================================================================
-   SERVER STATUS STRIP
+   SERVER STATUS STRIP (HERO-STYLE)
    ========================================================================== */
 .server-strip {
-  background: var(--color-surface-dark);
+  background: linear-gradient(135deg, var(--color-surface-dark) 0%, rgba(22, 24, 35, 0.95) 100%);
   border-bottom: 1px solid var(--color-border);
-  padding: 0.6rem var(--container-padding);
+  border-top: 1px solid rgba(155, 89, 182, 0.15);
+  padding: 1rem var(--container-padding);
   position: relative;
   z-index: 1;
+}
+
+.server-strip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--color-paws-purple) 25%, 
+    var(--color-paws-blue) 50%, 
+    var(--color-paws-purple) 75%, 
+    transparent 100%);
+  opacity: 0.4;
 }
 
 .server-strip__inner {
@@ -1177,49 +1194,75 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .server-strip__stat {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
+  gap: 8px;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
   white-space: nowrap;
 }
 
 .server-strip__stat .label {
   color: var(--color-text-muted);
+  font-size: 0.8rem;
 }
 
 .server-strip__stat .value {
   color: var(--color-text-primary);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.05rem;
+}
+
+.server-strip__stat .value--live {
+  color: #ed4245;
+  animation: pulse-live 1.5s infinite;
+}
+
+.server-strip__stat .value--highlight {
+  background: var(--gradient-signature);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .server-strip__dot {
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #3ba55c;
   animation: pulse-dot 2s infinite;
   display: inline-block;
   flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(59, 165, 92, 0.5);
 }
 
 @keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(59, 165, 92, 0.5); }
+  50% { opacity: 0.5; box-shadow: 0 0 14px rgba(59, 165, 92, 0.8); }
+}
+
+@keyframes pulse-live {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+  50% { opacity: 0.6; }
 }
 
 @media (max-width: 600px) {
+  .server-strip {
+    padding: 0.75rem var(--container-padding);
+  }
   .server-strip__inner {
-    gap: 0.75rem;
+    gap: 0.8rem;
   }
   .server-strip__stat {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
+  }
+  .server-strip__stat .value {
+    font-size: 0.9rem;
   }
 }
 
