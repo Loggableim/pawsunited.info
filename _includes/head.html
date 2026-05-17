@@ -56,7 +56,8 @@
 <meta name="robots" content="index, follow">
 
 <script>
-(function(){var l=document.documentElement.lang||'de';var b=(navigator.language||'').substr(0,2).toLowerCase();var s={de:1,en:1,fr:1,es:1,it:1,pt:1,nl:1,ru:1,sv:1};if(!s[b]||b===l)return;if(sessionStorage.getItem('paws_choice'))return;{% assign languages = site.data.locales.languages %}var p={{% for lang_hash in languages %}{% assign lc = lang_hash[0] %}{% assign lang_data = lang_hash[1] %}'{{ lc }}':'{{ lang_data.path }}'{% unless forloop.last %},{% endunless %}{% endfor %}};window.location.href=p[b];})();
+{% capture lang_paths %}{% for lh in site.data.locales.languages %}{% assign lc = lh[0] %}{% assign ld = lh[1] %}'{{ lc }}':'{{ ld.path }}'{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+(function(){var l=document.documentElement.lang||'de';var b=(navigator.language||'').substr(0,2).toLowerCase();var s={de:1,en:1,fr:1,es:1,it:1,pt:1,nl:1,ru:1,sv:1};if(!s[b]||b===l)return;if(sessionStorage.getItem('paws_choice'))return;var p={ {{ lang_paths }} };window.location.href=p[b];})();
 </script>
 
 <link rel="stylesheet" href="/assets/css/neon.css">
