@@ -31,3 +31,4 @@ pawsunited/
 # Test scripts
 scripts/check_discord_api.py
 scripts/test_api.py
+scripts/gh_action_test.py
