@@ -6,6 +6,36 @@ description: A home for gamers, furries, streamers & creators. Game servers, eve
 ---
 
 {% include hero.html %}
+
+<!-- Server Status Strip -->
+<div class="server-strip" id="serverStatusStrip">
+  <div class="server-strip__inner">
+    <span class="server-strip__stat">
+      <span class="server-strip__dot"></span>
+      <span class="label">Server:</span>
+      <span class="value">play.pawsunited.info</span>
+    </span>
+    <span class="server-strip__stat">
+      <span class="label">Java 1.20.4</span>
+    </span>
+    <span class="server-strip__stat">
+      <span class="label">👥</span>
+      <span class="value" id="discordOnline">43</span>
+      <span class="label">online</span>
+    </span>
+    <span class="server-strip__stat">
+      <span class="label">👤</span>
+      <span class="value" id="discordMembers">305</span>
+      <span class="label">members</span>
+    </span>
+    <span class="server-strip__stat">
+      <span class="label">🔴</span>
+      <span class="value" id="liveCount">0</span>
+      <span class="label">live</span>
+    </span>
+  </div>
+</div>
+
 {% include servers.html %}
 {% include team.html %}
 {% include creators.html %}
