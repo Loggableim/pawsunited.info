@@ -21,3 +21,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Preview build
+_preview/
+
+# Original asset source
+pawsunited/
+
+# Test scripts
+scripts/check_discord_api.py
+scripts/test_api.py
