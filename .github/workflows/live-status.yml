@@ -22,11 +22,6 @@ jobs:
       - name: Install dependencies
         run: pip install websockets
 
-      - name: Debug auth
-        env:
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-        run: python scripts/gh_action_test.py
-
       - name: Collect live status
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
