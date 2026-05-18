@@ -478,3 +478,72 @@
     color: #000 !important;
     box-shadow: var(--glow-purple);
   }
+
+
+/* ═══════════════════════════════════════════════════════
+   GLOW CARDS — V5b-v3 stat cards im Hero
+   ═══════════════════════════════════════════════════════ */
+
+/* ── LAYOUT FIT (2560x1080 kein Scrollen) ── */
+html, body { height: 100%; overflow: hidden; }
+body { display: flex; flex-direction: column; }
+
+.marquee-strip { flex: 0 0 auto; padding: 0.3rem 0; }
+.marquee-track span { font-size: 0.75rem; }
+
+nav { flex: 0 0 auto; padding: 0.5rem 2rem; position: relative; }
+.nav-logo img { height: 40px; }
+.nav-links a { padding: 0.3rem 0.65rem; font-size: 0.65rem; }
+
+/* ── HERO FIT ── */
+.hero { flex: 1 1 auto; min-height: 0; padding: 1.5rem 2rem 0.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.hero .glitch { font-size: clamp(3rem, 10vw, 12rem); line-height: 0.78; text-shadow: 0 0 40px rgba(255,45,149,0.3), 0 0 80px rgba(168,85,247,0.12), 0 0 120px rgba(0,240,255,0.06); }
+.hero-sub { font-size: 0.8rem; max-width: 480px; color: var(--text2); margin: 0.1rem auto 0.2rem; }
+
+/* ── GLOW CARDS ── */
+.glow-cards { display: flex; gap: 0.6rem; justify-content: center; position: relative; z-index: 2; flex-wrap: wrap; margin-bottom: 0.4rem; }
+.glow-card { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100px; min-width: 100px; height: 76px; flex-shrink: 0; background: linear-gradient(135deg, rgba(18,18,30,0.95), rgba(30,30,50,0.8)); border: 1px solid rgba(255,255,255,0.10); border-radius: 10px; text-align: center; transition: all 0.3s; position: relative; overflow: hidden; cursor: default; }
+.glow-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(168,85,247,0.08), transparent 70%); pointer-events: none; }
+.glow-card:hover { border-color: var(--neon-pink); transform: translateY(-4px); box-shadow: 0 0 25px rgba(255,45,149,0.2); }
+.glow-card .num { font-family: var(--font-display); font-size: 1.4rem; letter-spacing: 2px; line-height: 1; background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.glow-card .lbl { font-size: 0.55rem; color: var(--text2); text-transform: uppercase; letter-spacing: 2px; margin-top: 4px; font-weight: 600; }
+
+/* Live card */
+.glow-card.live { background: linear-gradient(135deg, rgba(255,45,149,0.08), rgba(18,18,30,0.95)); border-color: rgba(255,45,149,0.25); }
+.glow-card.live:hover { border-color: var(--neon-pink); box-shadow: 0 0 25px rgba(255,45,149,0.3); }
+.glow-card.live .live-pulse { width: 6px; height: 6px; border-radius: 50%; background: var(--neon-pink); animation: pulse 1.5s infinite; position: absolute; top: 10px; right: 10px; }
+.glow-card.live .live-label { font-size: 0.5rem; color: var(--neon-pink); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 2px; }
+.glow-card.live .num { background: var(--neon-pink); -webkit-text-fill-color: var(--neon-pink); font-size: 1.2rem; }
+.glow-card.live .lbl { color: var(--neon-pink); }
+
+@keyframes pulse { 0%,100% { opacity: 1; box-shadow: 0 0 6px var(--neon-pink); } 50% { opacity: 0.3; box-shadow: 0 0 2px var(--neon-pink); } }
+
+/* ── BURST BUTTONS ── */
+.burst-btn-group { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; }
+.btn-burst { display: inline-flex; align-items: center; gap: 8px; padding: 0.65rem 1.6rem; font-family: var(--font-body); font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; border-radius: 5px; transition: all 0.3s; }
+.btn-burst--primary { background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple)); color: #000; box-shadow: 0 0 20px rgba(255,45,149,0.25); }
+.btn-burst--primary:hover { transform: scale(1.05); box-shadow: 0 0 40px rgba(255,45,149,0.4); }
+.btn-burst--secondary { background: transparent; color: var(--neon-cyan); border: 2px solid var(--neon-cyan); }
+.btn-burst--secondary:hover { background: var(--neon-cyan); color: #000; }
+.btn-burst .sub { display: block; font-size: 0.45rem; letter-spacing: 1px; font-weight: 400; opacity: 0.6; }
+
+/* ── ULTRAMAID SCALING ── */
+@media (min-width: 2000px) {
+  .hero .glitch { font-size: clamp(7rem, 18vw, 22rem) !important; }
+  .hero-sub { font-size: 1rem; max-width: 650px; }
+  .glow-card { width: 120px; min-width: 120px; height: 90px; }
+  .glow-card .num { font-size: 2rem; }
+  .btn-burst { padding: 0.85rem 2.5rem; font-size: 0.85rem; }
+}
+
+/* ── MOBILE OVERRIDE ── */
+@media (max-width: 768px) {
+  html, body { height: auto; overflow: auto; }
+  body { display: block; }
+  .hero { min-height: 100vh !important; padding: 6rem 2rem 3rem !important; }
+}
+@media (max-width: 700px) {
+  .btn-burst { width: 100%; justify-content: center; }
+  .glow-card { width: 90px; min-width: 90px; height: 70px; }
+  .glow-card .num { font-size: 1.2rem; }
+}

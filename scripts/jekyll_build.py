@@ -172,7 +172,8 @@ class TemplateEngine:
         if m:
             obj = self._resolve_var(m.group(1), ctx)
             if isinstance(obj, dict):
-                return obj.get(m.group(2), '')
+                val = obj.get(m.group(2))
+                return val if val is not None else ''
             return ''
 
         # var[int]

@@ -1,24 +1,37 @@
 {% assign c = site.data.content[page.lang] %}
 {% assign hero = c.hero %}
-
-<div class="discord-bar">
-  <span class="discord-bar-text">
-    <strong>🔊 {{ c.discord_bar.tagline | default: "306 Members · 6 Servers · 13+ Streamers" }}</strong>
-    <span>{{ c.discord_bar.sub | default: "Join the pack — it's free!" }}</span>
-  </span>
-  <a href="https://discord.gg/pawsunited" class="discord-bar-btn" target="_blank">▸ {{ c.discord_bar.btn | default: "Join Discord" }}</a>
-</div>
+{% assign gc = c.glow_cards %}
+{% assign p = gc.btn_primary | default: "▸ Join Discord" %}
+{% assign ps = gc.btn_primary_sub | default: "Free · Instant Access" %}
+{% assign s = gc.btn_secondary | default: "Meet the Pack" %}
+{% assign ss = gc.btn_secondary_sub | default: "Meet creators &amp; community" %}
 
 <section class="hero" id="home">
   <div class="hero-bg-glow"></div>
   <canvas id="particlesCanvas"></canvas>
   <div class="hero-content">
-    <div class="hero-badge"><span class="dot"></span> {{ hero.badge }}</div>
     <h1 class="glitch" data-text="{{ hero.title }}">{{ hero.title }}</h1>
     <p class="hero-sub">{{ hero.subtitle }}</p>
-    <div class="hero-actions">
-      <a href="https://discord.gg/pawsunited" class="btn-neon btn-neon--pink" target="_blank">{{ hero.discord_btn }}</a>
-      <a href="#streamers" class="btn-neon btn-neon--cyan">{{ hero.secondary_btn }}</a>
+    <div class="glow-cards">
+      {% for card in gc.cards %}
+        {% if card.live %}
+          <div class="glow-card live">
+            <div class="live-pulse"></div>
+            <span class="live-label">{{ card.label }}</span>
+            <div class="num">{{ card.num }}</div>
+            <div class="lbl">{{ card.lbl }}</div>
+          </div>
+        {% else %}
+          <div class="glow-card">
+            <div class="num">{{ card.num }}</div>
+            <div class="lbl">{{ card.lbl }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="burst-btn-group">
+      <a href="https://discord.gg/pawsunited" class="btn-burst btn-burst--primary" target="_blank">{{ p }} <span class="sub">{{ ps }}</span></a>
+      <a href="#streamers" class="btn-burst btn-burst--secondary">{{ s }} <span class="sub">{{ ss }}</span></a>
     </div>
   </div>
 </section>
