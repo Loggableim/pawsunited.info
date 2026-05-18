@@ -318,9 +318,9 @@
   .carousel-dot.active { background: var(--neon-pink); box-shadow: 0 0 8px rgba(255,45,149,0.5); }
 
   /* ── STREAMER GRID ── */
-  .streamer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; margin-top: 2rem; }
-  @media (min-width: 1600px) { .streamer-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.25rem; } .streamer-card { padding: 1.5rem 1rem; } }
-  @media (min-width: 2000px) { .streamer-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem; } .streamer-avatar { width: 96px; height: 96px; } .streamer-card .name { font-size: 1.2rem; } }
+  .streamer-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1rem; margin-top: 2rem; }
+  @media (min-width: 1600px) { .streamer-grid { grid-template-columns: repeat(7, 1fr); gap: 1.25rem; } .streamer-card { padding: 1.5rem 1rem; } }
+  @media (min-width: 2000px) { .streamer-grid { grid-template-columns: repeat(7, 1fr); gap: 1.5rem; } .streamer-avatar { width: 96px; height: 96px; } .streamer-card .name { font-size: 1.2rem; } }
   @media (max-width: 600px) { .streamer-grid { grid-template-columns: repeat(2, 1fr); } }
   .streamer-card { padding: 1.25rem 0.75rem; text-align: center; background: var(--bg3); border: 1px solid var(--border); cursor: pointer; transition: all 0.3s; position: relative; overflow: hidden; text-decoration: none; color: inherit; }
   .streamer-card:hover { transform: translateY(-6px); border-color: var(--neon-pink); box-shadow: var(--glow-pink); }
