@@ -1,0 +1,26 @@
+{% assign c = site.data.content[page.lang] %}
+
+<section class="stats-section" id="stats">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">👥</div>
+      <div class="stat-number">306</div>
+      <div class="stat-label">{{ c.stats.members | default: "Members" }}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🎮</div>
+      <div class="stat-number">6</div>
+      <div class="stat-label">{{ c.stats.servers | default: "Game Servers" }}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">📺</div>
+      <div class="stat-number">13+</div>
+      <div class="stat-label">{{ c.stats.streamers | default: "Streamers" }}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🏆</div>
+      <div class="stat-number">Tier 3</div>
+      <div class="stat-label">{{ c.stats.boosts | default: "Boosts" }}</div>
+    </div>
+  </div>
+</section>

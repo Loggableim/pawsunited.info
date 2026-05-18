@@ -1,6 +1,14 @@
 {% assign c = site.data.content[page.lang] %}
 {% assign hero = c.hero %}
 
+<div class="discord-bar">
+  <span class="discord-bar-text">
+    <strong>🔊 {{ c.discord_bar.tagline | default: "306 Members · 6 Servers · 13+ Streamers" }}</strong>
+    <span>{{ c.discord_bar.sub | default: "Join the pack — it's free!" }}</span>
+  </span>
+  <a href="https://discord.gg/pawsunited" class="discord-bar-btn" target="_blank">▸ {{ c.discord_bar.btn | default: "Join Discord" }}</a>
+</div>
+
 <section class="hero" id="home">
   <div class="hero-bg-glow"></div>
   <canvas id="particlesCanvas"></canvas>

@@ -29,6 +29,16 @@ en:
     subtitle: "🌍 English-speaking streamers &amp; moderators wanted! Join an established furry-friendly community with 306 members, 6 game servers and dedicated Discord infrastructure. <strong>Your content, our platform.</strong>"
     discord_btn: "▸ Join Discord"
     secondary_btn: "Meet the Pack"
+  discord_bar:
+    tagline: "306 Members · 6 Servers · 13+ Streamers"
+    sub: "English-speaking furry-friendly community"
+    btn: "Join Discord — Free"
+  stats:
+    members: "Members"
+    servers: "Game Servers"
+    streamers: "Streamers"
+    boosts: "Tier 3 Boosts"
+
   acquisition:
     - icon: "🎥"
       title: "Your Channel, Amplified"
@@ -95,6 +105,16 @@ de:
     subtitle: "🐾 Deutschsprachige Furry Gaming-Community. Dedizierte Server, tägliche Streams, null Toxizität."
     discord_btn: "▸ Discord beitreten"
     secondary_btn: "Zum Rudel"
+  discord_bar:
+    tagline: "306 Mitglieder · 6 Server · 13+ Streamer"
+    sub: "Deutschsprachige Furry Community"
+    btn: "Discord beitreten — Kostenlos"
+  stats:
+    members: "Mitglieder"
+    servers: "Game-Server"
+    streamers: "Streamer"
+    boosts: "Tier 3 Boosts"
+
   acquisition:
     - icon: "🎥"
       title: "Dein Kanal, verstärkt"
@@ -161,6 +181,16 @@ fr:
     subtitle: "🇫🇷 Streamers et modérateurs francophones recherchés ! Rejoins une communauté furry-friendly avec 306 membres, 6 serveurs de jeu et une infrastructure Discord dédiée. <strong>Ton contenu, notre plateforme.</strong>"
     discord_btn: "▸ Rejoins Discord"
     secondary_btn: "Découvre la Meute"
+  discord_bar:
+    tagline: "306 Membres · 6 Serveurs · 13+ Streameurs"
+    sub: "Communauté francophone furry-friendly"
+    btn: "Rejoindre Discord — Gratuit"
+  stats:
+    members: "Membres"
+    servers: "Serveurs"
+    streamers: "Streameurs"
+    boosts: "Niveau 3 Boost"
+
   acquisition:
     - icon: "🎥"
       title: "Ta Chaîne, Amplifiée"
@@ -227,6 +257,16 @@ es:
     subtitle: "🇪🇸 ¡Buscamos streamers y moderadores de habla hispana! Únete a una comunidad furry-friendly con 306 miembros, 6 servidores de juego e infraestructura Discord dedicada. <strong>Tu contenido, nuestra plataforma.</strong>"
     discord_btn: "▸ Unirse a Discord"
     secondary_btn: "Conoce la Manada"
+  discord_bar:
+    tagline: "306 Miembros · 6 Servidores · 13+ Streamers"
+    sub: "Comunidad hispanohablante furry-friendly"
+    btn: "Unirse a Discord — Gratis"
+  stats:
+    members: "Miembros"
+    servers: "Servidores"
+    streamers: "Streamers"
+    boosts: "Nivel 3 Potenciado"
+
   acquisition:
     - icon: "🎥"
       title: "Tu Canal, Amplificado"
@@ -293,6 +333,16 @@ it:
     subtitle: "🇮🇹 Cercasi streamer e moderatori italiani! Unisciti a una comunità furry-friendly con 306 membri, 6 server di gioco e infrastruttura Discord dedicata. <strong>I tuoi contenuti, la nostra piattaforma.</strong>"
     discord_btn: "▸ Unisciti a Discord"
     secondary_btn: "Scopri il Branco"
+  discord_bar:
+    tagline: "306 Membri · 6 Server · 13+ Streamer"
+    sub: "Comunità italiana furry-friendly"
+    btn: "Unisciti a Discord — Gratuito"
+  stats:
+    members: "Membri"
+    servers: "Server"
+    streamers: "Streamer"
+    boosts: "Livello 3 Potenziato"
+
   acquisition:
     - icon: "🎥"
       title: "Il Tuo Canale, Amplificato"
@@ -359,6 +409,16 @@ pt:
     subtitle: "🇵🇹 Procuramos streamers e moderadores portugueses! Junta-te a uma comunidade furry-friendly com 306 membros, 6 servidores de jogo e infraestrutura Discord dedicada. <strong>O teu conteúdo, a nossa plataforma.</strong>"
     discord_btn: "▸ Entrar no Discord"
     secondary_btn: "Conhece a Matilha"
+  discord_bar:
+    tagline: "306 Membros · 6 Servidores · 13+ Streamers"
+    sub: "Comunidade portuguesa furry-friendly"
+    btn: "Entrar no Discord — Grátis"
+  stats:
+    members: "Membros"
+    servers: "Servidores"
+    streamers: "Streamers"
+    boosts: "Nível 3 Reforçado"
+
   acquisition:
     - icon: "🎥"
       title: "O Teu Canal, Amplificado"
@@ -425,6 +485,16 @@ nl:
     subtitle: "🇳🇱 Op zoek naar Nederlandse streamers en moderators! Sluit je aan bij een gevestigde furry-friendly community met 306 leden, 6 game servers en toegewijde Discord-infrastructuur. <strong>Jouw content, ons platform.</strong>"
     discord_btn: "▸ Word Lid van Discord"
     secondary_btn: "Ontmoet de Roedel"
+  discord_bar:
+    tagline: "306 Leden · 6 Servers · 13+ Streamers"
+    sub: "Nederlandse furry-friendly community"
+    btn: "Word lid van Discord — Gratis"
+  stats:
+    members: "Leden"
+    servers: "Servers"
+    streamers: "Streamers"
+    boosts: "Niveau 3 Versterkt"
+
   acquisition:
     - icon: "🎥"
       title: "Jouw Kanaal, Versterkt"
@@ -491,6 +561,16 @@ ru:
     subtitle: "🇷🇺 Ищем русскоязычных стримеров и модераторов! Присоединяйся к furry-friendly сообществу с 306 участниками, 6 игровыми серверами и инфраструктурой Discord. <strong>Твой контент, наша платформа.</strong>"
     discord_btn: "▸ Вступить в Discord"
     secondary_btn: "Познакомиться со Стаей"
+  discord_bar:
+    tagline: "306 Участников · 6 Серверов · 13+ Стримеров"
+    sub: "Русскоязычное furry-friendly сообщество"
+    btn: "Присоединиться к Discord — Бесплатно"
+  stats:
+    members: "Участников"
+    servers: "Серверов"
+    streamers: "Стримеров"
+    boosts: "Уровень 3 Усиление"
+
   acquisition:
     - icon: "🎥"
       title: "Твой канал, усиленный"
@@ -557,6 +637,16 @@ sv:
     subtitle: "🇸🇪 Vi söker svenska streamers och moderatorer! Gå med i en etablerad furry-friendly community med 306 medlemmar, 6 spelservrar och dedikerad Discord-infrastruktur. <strong>Ditt innehåll, vår plattform.</strong>"
     discord_btn: "▸ Gå med i Discord"
     secondary_btn: "Möt Flocken"
+  discord_bar:
+    tagline: "306 Medlemmar · 6 Spelservrar · 13+ Streamers"
+    sub: "Svensk furry-friendly community"
+    btn: "Gå med i Discord — Gratis"
+  stats:
+    members: "Medlemmar"
+    servers: "Spelservrar"
+    streamers: "Streamers"
+    boosts: "Nivå 3 Förstärkt"
+
   acquisition:
     - icon: "🎥"
       title: "Din Kanal, Förstärkt"
