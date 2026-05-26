@@ -6,15 +6,15 @@
     <div>
       <h4>{{ page.footer_servers | default: "Servers" }}</h4>
       <p style="margin-bottom:1rem;">play.pawsunited.info</p>
-      <a href="#servers">Minecraft</a>
-      <a href="#servers">ARK</a>
-      <a href="#servers">GTA V</a>
-      <a href="#servers">C&amp;C</a>
+      <a href="{% if site_lang == 'de' %}/servers/{% else %}/{{ site_lang }}/servers/{% endif %}">Minecraft</a>
+      <a href="{% if site_lang == 'de' %}/servers/{% else %}/{{ site_lang }}/servers/{% endif %}">ARK</a>
+      <a href="{% if site_lang == 'de' %}/servers/{% else %}/{{ site_lang }}/servers/{% endif %}">GTA V</a>
+      <a href="{% if site_lang == 'de' %}/servers/{% else %}/{{ site_lang }}/servers/{% endif %}">C&amp;C</a>
     </div>
     <div>
       <h4>{{ page.footer_community | default: "Community" }}</h4>
-      <a href="#streamers">{{ page.footer_creators | default: "Creators" }}</a>
-      <a href="#team">{{ page.nav_team | default: "Team" }}</a>
+      <a href="{% if site_lang == 'de' %}/#streamers{% else %}/{{ site_lang }}/#streamers{% endif %}">{{ page.footer_creators | default: "Creators" }}</a>
+      <a href="{% if site_lang == 'de' %}/#team{% else %}/{{ site_lang }}/#team{% endif %}">{{ page.nav_team | default: "Team" }}</a>
       <a href="https://discord.gg/pawsunited">Discord</a>
     </div>
     <div>

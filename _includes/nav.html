@@ -3,14 +3,14 @@
 {% assign current_lang = languages[site_lang] %}
 
 <nav>
-  <a href="#home" class="nav-logo">
+  <a href="{% if page.lang == 'de' %}/{% else %}/{{ page.lang }}/{% endif %}" class="nav-logo">
     <img src="/assets/img/logos/pawsunited-alt.png" alt="PAWS UNITED">
   </a>
   <ul class="nav-links">
-    <li><a href="#streamers">{{ page.nav_creators | default: "Creators" }}</a></li>
-    <li><a href="#features">{{ page.nav_features | default: "Features" }}</a></li>
-    <li><a href="#servers">{{ page.nav_servers | default: "Servers" }}</a></li>
-    <li><a href="#team">{{ page.nav_team | default: "Team" }}</a></li>
+    <li><a href="{% if page.lang == 'de' %}/#streamers{% else %}/{{ page.lang }}/#streamers{% endif %}">{{ page.nav_creators | default: "Creators" }}</a></li>
+    <li><a href="{% if page.lang == 'de' %}/#features{% else %}/{{ page.lang }}/#features{% endif %}">{{ page.nav_features | default: "Features" }}</a></li>
+    <li><a href="{% if page.lang == 'de' %}/servers/{% else %}/{{ page.lang }}/servers/{% endif %}">{{ page.nav_servers | default: "Servers" }}</a></li>
+    <li><a href="{% if page.lang == 'de' %}/#team{% else %}/{{ page.lang }}/#team{% endif %}">{{ page.nav_team | default: "Team" }}</a></li>
     <li class="nav-lang-wrap">
       <button class="nav-lang-btn" onclick="this.parentElement.classList.toggle('open')">
         {{ current_lang.flag }} <span class="lang-code">{{ current_lang.code }}</span> <span class="dropdown-arrow">▼</span>
@@ -36,9 +36,9 @@
 
 <!-- Mobile overlay menu -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#streamers" class="mobile-link">{{ page.nav_creators | default: "Creators" }}</a>
-  <a href="#features" class="mobile-link">{{ page.nav_features | default: "Features" }}</a>
-  <a href="#servers" class="mobile-link">{{ page.nav_servers | default: "Servers" }}</a>
-  <a href="#team" class="mobile-link">{{ page.nav_team | default: "Team" }}</a>
+  <a href="{% if page.lang == 'de' %}/#streamers{% else %}/{{ page.lang }}/#streamers{% endif %}" class="mobile-link">{{ page.nav_creators | default: "Creators" }}</a>
+  <a href="{% if page.lang == 'de' %}/#features{% else %}/{{ page.lang }}/#features{% endif %}" class="mobile-link">{{ page.nav_features | default: "Features" }}</a>
+  <a href="{% if page.lang == 'de' %}/servers/{% else %}/{{ page.lang }}/servers/{% endif %}" class="mobile-link">{{ page.nav_servers | default: "Servers" }}</a>
+  <a href="{% if page.lang == 'de' %}/#team{% else %}/{{ page.lang }}/#team{% endif %}" class="mobile-link">{{ page.nav_team | default: "Team" }}</a>
   <a href="https://discord.gg/pawsunited" class="mobile-discord" target="_blank">[ {{ page.nav_discord_mobile | default: "Discord beitreten" }} ]</a>
 </div>

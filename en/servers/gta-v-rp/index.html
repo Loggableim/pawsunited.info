@@ -1,0 +1,142 @@
+---
+layout: page
+lang: en
+title: "GTA V RP — PAWS UNITED"
+description: "Custom roleplay server with unique storylines and player-driven economy."
+nav_creators: "Creators"
+nav_features: "Features"
+nav_servers: "Servers"
+nav_team: "Team"
+nav_join: "Join"
+nav_menu: "Open Menu"
+nav_discord_mobile: "Join Discord"
+---
+
+<div class="game-detail">
+  <a href="/en/servers/" class="game-detail__back">← All Servers</a>
+
+  <div class="game-detail__hero">
+    <div class="game-detail__hero-content">
+      <h1 class="glitch" data-text="GTA V RP">🚗 GTA V RP</h1>
+      <p>PAWS UNITED Grand Theft Auto V Server</p>
+      <div class="game-detail__ip-row">
+        <span class="game-detail__status game-detail__status--online">Online</span>
+        <code class="game-detail__ip">gta.pawsunited.info</code>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('gta.pawsunited.info');this.textContent='✓ Kopiert';setTimeout(()=>this.textContent='📋 Kopieren',2000)">📋 Kopieren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-detail__body">
+    <div class="game-detail__section">
+      <h2>Custom roleplay server with unique storylines and player-driven economy.</h2>
+    </div>
+
+    <div class="game-detail__section">
+      <h3>🎯 Features</h3>
+      <ul class="game-detail__features">
+      <li>FiveM-based roleplay server</li>
+      <li>Player-driven economy & jobs</li>
+      <li>Custom storylines & events</li>
+      <li>Vehicle & property trading</li>
+      <li>Criminal & legal paths</li>
+      <li>Active admin team for RP quality</li>
+      </ul>
+    </div>
+
+    <div class="game-detail__section">
+      <h3>🎮 How to Join</h3>
+      <ol class="game-detail__steps">
+      <li>Launch the game and select Multiplayer</li>
+      <li>Enter the IP <strong>gta.pawsunited.info</strong></li>
+      <li>Connect and become part of the pack! 🐾</li>
+      </ol>
+    </div>
+
+    <div class="game-detail__section">
+      <h3>📸 Screenshots</h3>
+      <div class="game-detail__screenshots">
+        <div class="screenshot-placeholder">Screenshot 1</div>
+        <div class="screenshot-placeholder">Screenshot 2</div>
+        <div class="screenshot-placeholder">Screenshot 3</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-detail__cta">
+    <p>Not a member yet? Join our Discord!</p>
+    <a href="https://discord.gg/pawsunited" class="btn-neon btn-neon--pink" target="_blank">▸ Join Discord</a>
+  </div>
+</div>
+
+<style>
+.game-detail {
+  max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem;
+}
+.game-detail__back {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--text3); text-decoration: none; font-size: 0.8rem;
+  text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+.game-detail__back:hover { color: var(--neon-cyan); }
+.game-detail__hero {
+  background: var(--bg2); border: 1px solid var(--border);
+  padding: 3rem; margin-bottom: 2rem; position: relative; overflow: hidden;
+}
+.game-detail__hero::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+  background: linear-gradient(180deg, var(--neon-pink), var(--neon-purple));
+}
+.game-detail__hero-content h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.25rem; }
+.game-detail__hero-content p { color: var(--text2); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.game-detail__ip-row {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.game-detail__status {
+  display: inline-block; padding: 3px 12px; font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1px;
+  border: 1px solid var(--neon-green); color: var(--neon-green);
+}
+.game-detail__ip {
+  font-family: var(--font-mono); font-size: 0.85rem; color: var(--neon-cyan);
+  background: rgba(0,240,255,0.06); padding: 6px 14px; border-radius: 4px;
+}
+.copy-btn {
+  background: none; border: 1px solid var(--text3); color: var(--text3);
+  font-size: 0.65rem; padding: 6px 12px; cursor: pointer; border-radius: 4px;
+  transition: all 0.2s; font-family: var(--font-body);
+}
+.copy-btn:hover { border-color: var(--neon-cyan); color: var(--neon-cyan); }
+.game-detail__body {
+  background: var(--bg2); border: 1px solid var(--border);
+  padding: 2.5rem; margin-bottom: 2rem;
+}
+.game-detail__section { margin-bottom: 2.5rem; }
+.game-detail__section:last-child { margin-bottom: 0; }
+.game-detail__section h2 { font-size: 1.1rem; color: var(--text2); font-weight: 400; line-height: 1.6; font-family: var(--font-body); }
+.game-detail__section h3 { font-size: 1.2rem; margin-bottom: 1rem; font-family: var(--font-display); letter-spacing: 1px; }
+.game-detail__features, .game-detail__steps {
+  list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.6rem;
+}
+.game-detail__features li, .game-detail__steps li {
+  padding: 0.8rem 1rem; background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.85rem; color: var(--text2); line-height: 1.5;
+}
+.game-detail__features li::before {
+  content: '✓ '; color: var(--neon-green); font-weight: 700;
+}
+.game-detail__screenshots {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+}
+.screenshot-placeholder {
+  aspect-ratio: 16/9; background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; display: flex; align-items: center; justify-content: center;
+  color: var(--text3); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+}
+.game-detail__cta {
+  text-align: center; padding: 3rem; background: var(--bg2);
+  border: 1px solid var(--border); border-radius: 8px;
+}
+.game-detail__cta p { color: var(--text2); font-size: 0.95rem; margin-bottom: 1.5rem; }
+</style>

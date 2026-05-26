@@ -1,0 +1,168 @@
+---
+layout: page
+lang: en
+title: "Game Servers — PAWS UNITED"
+description: "All PAWS UNITED game servers with IPs, status and details. Minecraft, ARK, GTA V RP, C&C Red Alert, Valheim, CS2."
+nav_creators: "Creators"
+nav_features: "Features"
+nav_servers: "Servers"
+nav_team: "Team"
+nav_join: "Join"
+nav_menu: "Open Menu"
+nav_discord_mobile: "Join Discord"
+server_play_btn: "▸ Details"
+---
+
+<div class="page-header">
+  <h1 class="glitch" data-text="Our Servers">Our Servers</h1>
+  <p>Pick your game — each server with its own page, info and access</p>
+</div>
+
+<div class="page-content server-landing">
+  <div class="server-landing__grid">
+    {% assign servers = site.data.servers %}
+    {% for s in servers %}
+    <a href="{{ s.subdomain_url }}" target="_blank" rel="noopener noreferrer" class="server-landing__card-link">
+      <div class="server-landing__card">
+        <div class="server-landing__header">
+          <span class="server-landing__icon">{{ s.icon }}</span>
+          <div>
+            <h2>{{ s.name }}</h2>
+            <span class="server-landing__status server-landing__status--{{ s.tag | downcase }}">{{ s.tag }}</span>
+          </div>
+        </div>
+        <p class="server-landing__desc">{{ s.desc_en }}</p>
+        <div class="server-landing__ip">
+          <span class="label">IP:</span>
+          <code>{{ s.ip }}</code>
+        </div>
+        <span class="server-landing__play-btn">▸ Open Server</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="server-landing__cta">
+    <p>Don't have access? Join our Discord for server info and passwords!</p>
+    <a href="https://discord.gg/pawsunited" class="btn-neon btn-neon--pink" target="_blank">▸ Join Discord</a>
+  </div>
+</div>
+
+<style>
+.server-landing__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.server-landing__card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.server-landing__card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.server-landing__card-link:hover .server-landing__card {
+  border-color: var(--neon-purple);
+  box-shadow: var(--glow-purple);
+  transform: translateY(-3px);
+}
+.server-landing__card::before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(180deg, var(--neon-pink), var(--neon-purple));
+  transform: scaleY(0); transition: transform 0.3s;
+}
+.server-landing__card-link:hover .server-landing__card::before { transform: scaleY(1); }
+.server-landing__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.server-landing__icon { font-size: 2.5rem; }
+.server-landing__header h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.server-landing__status {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid var(--neon-green);
+  color: var(--neon-green);
+  margin-top: 4px;
+}
+.server-landing__desc {
+  color: var(--text2);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.server-landing__ip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--neon-cyan);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.server-landing__ip .label {
+  color: var(--text3);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.server-landing__ip code {
+  background: rgba(0,240,255,0.08);
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+.server-landing__play-btn {
+  display: block;
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple));
+  color: #000 !important;
+  border-radius: 4px;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(255,45,149,0.2);
+}
+.server-landing__card-link:hover .server-landing__play-btn {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(255,45,149,0.4);
+}
+.server-landing__cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.server-landing__cta p {
+  color: var(--text2);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+</style>

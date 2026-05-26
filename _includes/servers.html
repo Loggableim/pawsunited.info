@@ -4,6 +4,7 @@
 <div class="server-carousel" id="serverCarousel">
   <div class="server-carousel__track" id="carouselTrack">
     {% for s in servers %}
+    {% assign subdomain_clean = s.subdomain_url | remove: 'https://' %}
     <div class="server-carousel__slide">
       <div class="server-card">
         <span class="tag">{{ s.tag }}</span>
@@ -13,7 +14,11 @@
         {% else %}
         <p>{{ s.desc }}</p>
         {% endif %}
-        <div class="ip">▸ {{ s.ip }}</div>
+        <div class="server-card__links">
+          <a href="{{ s.subdomain_url }}" target="_blank" rel="noopener noreferrer" class="server-card__subdomain">▸ {{ subdomain_clean }}</a>
+          <span class="server-card__ip">{{ s.ip }}</span>
+        </div>
+        <a href="{{ s.subdomain_url }}" target="_blank" rel="noopener noreferrer" class="server-card__details-btn">{{ page.server_play_btn | default: "▸ Details" }}</a>
       </div>
     </div>
     {% endfor %}

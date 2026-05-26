@@ -307,6 +307,30 @@
   .server-card h3 { font-size: 1.4rem; margin-bottom: 0.25rem; letter-spacing: 1px; }
   .server-card p { color: var(--text2); font-size: 0.82rem; line-height: 1.5; }
   .server-card .ip { font-family: var(--font-mono); font-size: 0.7rem; color: var(--neon-cyan); margin-top: 0.75rem; }
+  .server-card__links {
+    margin-top: 0.75rem;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .server-card__subdomain {
+    font-family: var(--font-mono); font-size: 0.75rem;
+    color: var(--neon-purple); text-decoration: none;
+    transition: color 0.2s;
+    display: inline-flex; align-items: center;
+  }
+  .server-card__subdomain:hover { color: var(--neon-pink); text-decoration: underline; }
+  .server-card__ip {
+    font-family: var(--font-mono); font-size: 0.65rem;
+    color: var(--text3);
+  }
+  .server-card__details-btn {
+    display: inline-block; margin-top: 0.75rem; padding: 0.45rem 1.2rem;
+    font-family: var(--font-body); font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1.5px; text-decoration: none;
+    background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple));
+    color: #000 !important; border-radius: 4px;
+    transition: all 0.3s; box-shadow: 0 0 15px rgba(255,45,149,0.2);
+  }
+  .server-card:hover .server-card__details-btn { transform: scale(1.05); box-shadow: 0 0 25px rgba(255,45,149,0.4); }
   .carousel-nav {
     display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.5rem;
   }
