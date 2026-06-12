@@ -61,96 +61,103 @@ async def collect_voice_states(token):
     guild_channels = {}
     collected = asyncio.Event()
     
-    async with websockets.connect(
-        "wss://gateway.discord.gg/?v=10&encoding=json",
-        ping_interval=20,
-        ping_timeout=10,
-    ) as ws:
-        # Wait for Hello (op 10)
-        hello_raw = await ws.recv()
-        hello = json.loads(hello_raw)
-        heartbeat_interval = hello["d"]["heartbeat_interval"] / 1000.0
-        
-        # Start heartbeat task
-        async def heartbeat():
-            while True:
-                await asyncio.sleep(heartbeat_interval)
+    try:
+        async with websockets.connect(
+            "wss://gateway.discord.gg/?v=10&encoding=json",
+            ping_interval=20,
+            ping_timeout=10,
+            close_timeout=5,
+        ) as ws:
+            # Wait for Hello (op 10)
+            hello_raw = await ws.recv()
+            hello = json.loads(hello_raw)
+            heartbeat_interval = hello["d"]["heartbeat_interval"] / 1000.0
+
+            # Start heartbeat task
+            async def heartbeat():
+                while True:
+                    await asyncio.sleep(heartbeat_interval)
+                    try:
+                        await ws.send(json.dumps({"op": 1, "d": None}))
+                    except:
+                        break
+
+            hb_task = asyncio.create_task(heartbeat())
+
+            # Send Identify (intent 512 = GUILD_VOICE_STATES, intent 1 = GUILDS)
+            await ws.send(json.dumps({
+                "op": 2,
+                "d": {
+                    "token": token,
+                    "properties": {
+                        "$os": "linux",
+                        "$browser": "pawsunited",
+                        "$device": "pawsunited"
+                    },
+                    "intents": 513,  # GUILDS (1) + GUILD_VOICE_STATES (512)
+                }
+            }))
+
+            # Listen for events for max 8 seconds
+            start = time.time()
+            while time.time() - start < 8:
                 try:
-                    await ws.send(json.dumps({"op": 1, "d": None}))
-                except:
-                    break
-        
-        hb_task = asyncio.create_task(heartbeat())
-        
-        # Send Identify (intent 512 = GUILD_VOICE_STATES, intent 1 = GUILDS)
-        await ws.send(json.dumps({
-            "op": 2,
-            "d": {
-                "token": token,
-                "properties": {
-                    "$os": "linux",
-                    "$browser": "pawsunited",
-                    "$device": "pawsunited"
-                },
-                "intents": 513,  # GUILDS (1) + GUILD_VOICE_STATES (512)
-            }
-        }))
-        
-        # Listen for events for max 8 seconds
-        start = time.time()
-        while time.time() - start < 8:
-            try:
-                raw = await asyncio.wait_for(ws.recv(), timeout=2)
-            except asyncio.TimeoutError:
-                continue
-            
-            data = json.loads(raw)
-            op = data.get("op")
-            t = data.get("t")
-            d = data.get("d", {})
-            
-            if op == 0 and t == "READY":
-                # Connected! Now guild will follow
-                pass
-            
-            elif op == 0 and t == "GUILD_CREATE":
-                # Store channel info
-                gid = int(d.get("id", 0))
-                if gid == GUILD_ID:
-                    for ch in d.get("channels", []):
-                        guild_channels[int(ch["id"])] = {
-                            "name": ch.get("name", "?"),
-                            "type": ch.get("type"),
-                            "parent_id": ch.get("parent_id"),
+                    raw = await asyncio.wait_for(ws.recv(), timeout=2)
+                except asyncio.TimeoutError:
+                    continue
+
+                data = json.loads(raw)
+                op = data.get("op")
+                t = data.get("t")
+                d = data.get("d", {})
+
+                if op == 0 and t == "READY":
+                    # Connected! Now guild will follow
+                    pass
+
+                elif op == 0 and t == "GUILD_CREATE":
+                    # Store channel info
+                    gid = int(d.get("id", 0))
+                    if gid == GUILD_ID:
+                        for ch in d.get("channels", []):
+                            guild_channels[int(ch["id"])] = {
+                                "name": ch.get("name", "?"),
+                                "type": ch.get("type"),
+                                "parent_id": ch.get("parent_id"),
+                            }
+                        # We have guild + channels, now wait for voice states
+                        collected.set()
+
+                elif op == 0 and t == "VOICE_STATE_UPDATE":
+                    # A voice state update
+                    uid = int(d.get("user_id", 0))
+                    ch_id = d.get("channel_id")
+                    if ch_id:
+                        voice_states[uid] = {
+                            "channel_id": int(ch_id),
+                            "self_stream": d.get("self_stream", False),
+                            "self_video": d.get("self_video", False),
+                            "self_mute": d.get("self_mute", False),
+                            "self_deaf": d.get("self_deaf", False),
+                            "member_name": d.get("member", {}).get("user", {}).get("username", "?"),
+                            "nick": d.get("member", {}).get("nick"),
+                            "avatar": d.get("member", {}).get("avatar"),
                         }
-                    # We have guild + channels, now wait for voice states
-                    collected.set()
-            
-            elif op == 0 and t == "VOICE_STATE_UPDATE":
-                # A voice state update
-                uid = int(d.get("user_id", 0))
-                ch_id = d.get("channel_id")
-                if ch_id:
-                    voice_states[uid] = {
-                        "channel_id": int(ch_id),
-                        "self_stream": d.get("self_stream", False),
-                        "self_video": d.get("self_video", False),
-                        "self_mute": d.get("self_mute", False),
-                        "self_deaf": d.get("self_deaf", False),
-                        "member_name": d.get("member", {}).get("user", {}).get("username", "?"),
-                        "nick": d.get("member", {}).get("nick"),
-                        "avatar": d.get("member", {}).get("avatar"),
-                    }
-                else:
-                    # Left voice channel
-                    voice_states.pop(uid, None)
-            
-            elif op == 0 and t == "VOICE_STATE_UPDATE":
-                # Already handled above - this is duplicate check
-                pass
-        
-        hb_task.cancel()
-        return voice_states, guild_channels
+                    else:
+                        # Left voice channel
+                        voice_states.pop(uid, None)
+
+            hb_task.cancel()
+            return voice_states, guild_channels
+    except websockets.exceptions.ConnectionClosedError as e:
+        print(f"ERROR: Discord connection failed: {e}", flush=True)
+        if "4004" in str(e):
+            print("  → DISCORD_BOT_TOKEN is invalid or expired. Generate a new bot token at:", flush=True)
+            print("    https://discord.com/developers/applications", flush=True)
+        sys.exit(1)
+    except Exception as e:
+        print(f"ERROR: Unexpected error connecting to Discord: {e}", flush=True)
+        sys.exit(1)
 
 
 def build_status(voice_states, guild_channels):
